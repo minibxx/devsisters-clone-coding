@@ -1,0 +1,171 @@
+@import url("./reset.css");
+
+@mixin reset {margin:0;padding:0;}
+@mixin flex($x, $y){ 
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+    @content;
+}
+@mixin font($z,$d) {font-weight: $z;font-size: $d;}
+
+$wid : 1280px;
+
+p {white-space: pre-line;}
+a {text-decoration: none; color:#000;}
+*{box-sizing: border-box}
+
+body,html {@include reset; font-family: 'Inter', sans-serif;}
+body {position: relative;}
+
+figure {
+  height: 85vh;
+  > video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+  }
+}
+header{
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+
+.nav-b {
+    width: $wid;
+    @include flex(space-between,center){}
+    margin: 0 auto;
+    padding: 20px 0;
+
+    > div {
+      font-size: 1.5rem;
+      color: white;
+      font-family: "Pretendard-Black";
+    }
+    > ul {
+        @include flex(space-between,center){}
+        padding: 0;
+        > li {
+            list-style-type: none;
+            font-size: 14px;
+            color: white;
+            padding: 0 40px;
+        }
+    }
+}
+
+.bb {
+    @include flex(space-between,start ){flex-direction: column};
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    font-size: 100px;
+    color: white;
+    font-weight: 900;
+    text-shadow: 5px 5px 0px #fe5e00;
+    font-family: "Pretendard-ExtraBold";
+    font-style: oblique;
+  > span {
+    text-shadow: none;
+    color: #fe5e00;
+  }
+}
+
+.top {
+    @include flex(space-between,center){};
+    width: $wid;;
+    height: 350px;
+    margin: 0 auto;
+    >div {
+        > p {
+        @include flex(space-between,start){flex-direction: column};
+        font-size: 24px;
+        margin-top: 15px;
+        }
+        > p:nth-of-type(2) {
+          color: #fe5e00;
+        }     
+    }
+    > img {
+      width: 50%;
+      animation: rhkdus 1s infinite alternate;
+      transition: 0.5s;
+    }
+}    
+
+
+@keyframes rhkdus {
+  0% {transform: translateY(0%);}
+  100% {transform: translateY(5%);}
+}
+
+.title {
+    width: $wid;
+    margin: 0 auto;
+    color: #fe5e00;
+    font-size: 90px;
+    font-family: "Pretendard-ExtraBold";
+    font-style: oblique;
+}
+
+.a1-con {
+    @include flex(space-between,center){};
+    overflow: hidden;
+
+    > figure {
+        
+      animation-name: ani-1;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      
+      @keyframes ani-1{
+          0%{transform: translateX(0%);} 
+          100%{transform: translateX(-100%) ;}
+      } 
+        
+    width: 355px; height: 400px;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 20px;
+    margin: 80px 30px;
+    > img{
+        width: 352px;
+        object-fit: fill;
+        border-radius: 18px 18px 0 0 ;
+    }
+    > figcaption{
+        >p:nth-of-type(1){
+          width: 300px;
+        font-size: 20px;
+        padding: 30px;
+        >p:nth-of-type(2) {
+          > a{
+            width: fit-content;
+            block-size: fit-content;
+            background-color: #fe5e00;
+            color: white;
+          }
+        }  
+      }
+    }
+  }
+}
+
+title{
+  >figure {
+    height: 40vh;
+    > video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      left: 0;
+      top: 0;
+    }
+  }
+}
