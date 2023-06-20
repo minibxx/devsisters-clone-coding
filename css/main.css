@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("./reset.css");
 p {
   white-space: pre-line;
@@ -22,14 +23,14 @@ body {
   position: relative;
 }
 
-figure {
-  height: 85vh;
-}
-figure > video {
+.m-video {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+.m-video > video {
+  width: 100%;
+  object-fit: cover;
   left: 0;
   top: 0;
 }
@@ -43,7 +44,7 @@ header {
 }
 
 .nav-b {
-  width: 1280px;
+  width: 1120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,14 +69,16 @@ header {
   padding: 0 40px;
 }
 
-.bb {
+.brave {
+  margin: 0 auto;
+  width: 1120px;
+  padding: 500px 0 100px 0;
+}
+.brave > p {
   display: flex;
   justify-content: space-between;
   align-items: start;
   flex-direction: column;
-  position: absolute;
-  left: 15%;
-  top: 15%;
   font-size: 100px;
   color: white;
   font-weight: 900;
@@ -83,7 +86,7 @@ header {
   font-family: "Pretendard-ExtraBold";
   font-style: oblique;
 }
-.bb > span {
+.brave > p > span {
   text-shadow: none;
   color: #fe5e00;
 }
@@ -92,9 +95,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1280px;
-  height: 350px;
-  margin: 0 auto;
+  width: 1120px;
+  margin: auto;
 }
 .top > div > p {
   display: flex;
@@ -122,10 +124,10 @@ header {
   }
 }
 .title {
-  width: 1280px;
-  margin: 0 auto;
+  width: 1120px;
+  margin: 120px auto 0 auto;
   color: #fe5e00;
-  font-size: 90px;
+  font-size: 70px;
   font-family: "Pretendard-ExtraBold";
   font-style: oblique;
 }
@@ -142,10 +144,10 @@ header {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   width: 355px;
-  height: 400px;
+  height: 420px;
   border: 1px solid rgb(201, 201, 201);
   border-radius: 20px;
-  margin: 80px 30px;
+  margin: 30px;
 }
 @keyframes ani-1 {
   0% {
@@ -157,13 +159,209 @@ header {
 }
 .a1-con > figure > img {
   width: 352px;
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
   border-radius: 18px 18px 0 0;
 }
 .a1-con > figure > figcaption {
+  height: 220px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+}
+.a1-con > figure > figcaption > p {
   width: 300px;
-  margin: 30px 0 0 26px;
+  font-size: 16px;
+}
+.a1-con > figure > figcaption > p > a {
+  background-color: #ff8200;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 25px;
+  font-size: 12px;
+  margin: 2px;
+}
+
+.bt-black {
+  width: 1120px;
+  margin: 20px auto;
+}
+.bt-black > a {
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 100px;
+}
+.bt-black > a::after {
+  content: "arrow_forward_ios";
+  font-family: "Material Symbols Outlined";
+  vertical-align: middle;
+  margin: 0 0 0 5px;
+}
+
+.games > figure {
+  width: 1120px;
+  margin: 40px auto;
+  position: relative;
+}
+.games > figure > video {
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+}
+.games > figure > figcaption {
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  color: white;
+  text-align: center;
+}
+.games > figure > figcaption > p {
+  margin: 15px;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0);
+}
+.games > figure > figcaption > p:nth-of-type(1) {
   font-size: 20px;
-  padding: 0 auto;
+}
+.games > figure > figcaption > p:nth-of-type(2) {
+  font-size: 15px;
+}
+.games > figure > figcaption > p:nth-of-type(3) {
+  font-size: 15px;
+}
+
+.studios {
+  width: 1120px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.studios > figure {
+  width: 30%;
+  height: 400px;
+  border-radius: 20px;
+  text-align: center;
+}
+.studios > figure > img {
+  width: 100%;
+  height: 180px;
+  object-fit: none;
+  margin: 0;
+}
+.studios > figure > figcaption > b {
+  padding: 30px;
+  font-size: 25px;
+  border-top: 1px solid brown;
+}
+.studios > figure > figcaption > p {
+  padding: 0 40px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.studios > figure:nth-of-type(1) {
+  background-color: #ffe7c4;
+}
+.studios > figure:nth-of-type(2) {
+  background-color: #FF4347;
+}
+.studios > figure:nth-of-type(2) > figcaption > b {
+  color: white;
+}
+.studios > figure:nth-of-type(2) > figcaption > p {
+  color: white;
+}
+.studios > figure:nth-of-type(3) {
+  background-color: #202121;
+}
+.studios > figure:nth-of-type(3) > figcaption > b {
+  color: white;
+}
+.studios > figure:nth-of-type(3) > figcaption > p {
+  color: white;
+}
+
+.stories {
+  width: 1120px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.stories > div {
+  width: 22%;
+  height: 250px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  flex-direction: column;
+  background: -80px/cover;
+}
+.stories > div:nth-of-type(1) {
+  background-image: url(../img/main/16.\ 아워스토리즈1.jpg);
+}
+.stories > div:nth-of-type(2) {
+  background-image: url(../img/main/17.\ 아워스토리즈2.jpg);
+}
+.stories > div:nth-of-type(3) {
+  background-image: url(../img/main/18.\ 아워스토리즈3.jpg);
+}
+.stories > div:nth-of-type(4) {
+  background-image: url(../img/main/19.\ 아워스토리즈4.jpg);
+}
+.stories > div > p {
+  padding: 0 20px;
+  color: white;
+  font-size: 15px;
+}
+.stories > div > a {
+  background-color: #ff8200;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 25px;
+  font-size: 12px;
+  margin: 20px;
+}
+
+.ft {
+  margin-top: 120px;
+  width: 100%;
+  height: 550px;
+  background-color: #fe5e00;
+  color: white;
+}
+.ft .ft-top {
+  width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.ft .ft-top > div:nth-of-type(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  font-size: 15px;
+  margin: 10px 0;
+}
+.ft .ft-top > div:nth-of-type(1) .ft-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ft .ft-top > div:nth-of-type(1) .ft-list > li {
+  margin: 10px;
+}
+.ft .ft-top > div:nth-of-type(2) {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
