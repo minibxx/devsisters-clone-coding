@@ -12,7 +12,7 @@
 $wid : 1120px;
 
 p {white-space: pre-line;}
-a {text-decoration: none; color:#000; display: inline-block}
+a {text-decoration: none; color:#000;}
 *{box-sizing: border-box}
 
 body,html {@include reset; font-family: 'Inter', sans-serif;}
@@ -116,11 +116,12 @@ header{
     font-size: 70px;
     font-family: "Pretendard-ExtraBold";
     font-style: oblique;
-}.a1-con {
+}
+.a1-con {
   @include flex(space-between,center){};
   overflow: hidden;
 
-  > figure {
+  figure {
       
     animation-name: ani-1;
     animation-duration: 4s;
