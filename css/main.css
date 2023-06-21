@@ -7,6 +7,7 @@ p {
 a {
   text-decoration: none;
   color: #000;
+  display: inline-block;
 }
 
 * {
@@ -30,8 +31,7 @@ body {
 }
 .m-video > video {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   left: 0;
   top: 0;
 }
@@ -153,10 +153,17 @@ header {
   border-radius: 20px;
   margin: 30px;
 }
+@keyframes ani-1 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .a1-con > figure > img {
   width: 352px;
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
   border-radius: 18px 18px 0 0;
 }
 .a1-con > figure > figcaption {
@@ -209,8 +216,7 @@ header {
   position: relative;
 }
 .games > figure > video {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   left: 0;
   top: 0;
   border-radius: 30px;
@@ -247,60 +253,53 @@ header {
   align-items: center;
   flex-direction: row;
 }
-.studios > figure {
+.studios .studios-a {
   width: 30%;
   height: 400px;
   border-radius: 20px;
   text-align: center;
 }
-.studios > figure > img {
+.studios .studios-a:nth-of-type(1) {
+  background-color: #ffe7c4;
+}
+.studios .studios-a:nth-of-type(2) {
+  background-color: #FF4347;
+}
+.studios .studios-a:nth-of-type(3) {
+  background-color: #202121;
+}
+
+.studios-it > img {
   width: 100%;
   height: 180px;
-  -o-object-fit: none;
-     object-fit: none;
+  object-fit: none;
   margin: 0;
 }
-.studios > figure > figcaption > b {
+
+.st-fc > b {
   padding: 30px;
   font-size: 25px;
 }
-.studios > figure > figcaption > p {
+.st-fc > p {
   padding: 0 40px;
   font-size: 15px;
   line-height: 1.7;
 }
-.studios > figure:nth-of-type(1) {
-  background-color: #ffe7c4;
-}
-.studios > figure:nth-of-type(2) {
-  background-color: #FF4347;
-}
-.studios > figure:nth-of-type(2) > figcaption > b {
-  color: white;
-}
-.studios > figure:nth-of-type(2) > figcaption > p {
-  color: white;
-}
-.studios > figure:nth-of-type(3) {
-  background-color: #202121;
-}
-.studios > figure:nth-of-type(3) > figcaption > b {
-  color: white;
-}
-.studios > figure:nth-of-type(3) > figcaption > p {
+
+.text-white {
   color: white;
 }
 
 .line-brown {
   height: 0;
   margin: 0 20px;
-  border-top: 1px solid brown;
+  border-top: 0.5px solid brown;
 }
 
 .line-white {
   height: 0;
   margin: 0 20px;
-  border-top: 1px solid white;
+  border-top: 0.5px solid white;
 }
 
 .stories {
@@ -347,37 +346,88 @@ header {
   margin: 20px;
 }
 
-.ft {
+footer {
+  position: relative;
   margin-top: 120px;
   width: 100%;
-  height: 550px;
   background-color: #fe5e00;
-  color: white;
 }
-.ft .ft-top {
+
+.ft {
+  color: white;
+  padding: 100px 0 80px 0;
+}
+
+.ft-top {
   width: 1120px;
-  margin: 0 auto;
+  margin: 0px auto;
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
-.ft .ft-top > div:nth-of-type(1) {
+.ft-top > div:nth-of-type(1) {
   display: flex;
   justify-content: space-between;
   align-items: start;
   flex-direction: column;
   font-size: 15px;
 }
-.ft .ft-top > div:nth-of-type(1) .ft-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-}
-.ft .ft-top > div:nth-of-type(2) {
+.ft-top div:nth-of-type(2) {
   width: 20%;
   display: flex;
   justify-content: space-between;
   align-items: start;
   align-items: center;
+}
+.ft-top div:nth-of-type(2) > p:nth-of-type(2)::after {
+  content: "expand_more";
+  font-family: "Material Symbols Outlined";
+  vertical-align: middle;
+  font-size: 25px;
+  margin: 0 0 0 5px;
+}
+
+.ft-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.ft-list > li {
+  margin: 10px 0;
+}
+.ft-list > li::after {
+  content: "arrow_outward";
+  font-family: "Material Symbols Outlined";
+  vertical-align: middle;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.ft-logo {
+  width: 1120px;
+  margin: 0 auto;
+}
+.ft-logo > svg {
+  width: 80%;
+  padding: 120px 0 20px 0;
+}
+
+.ft-last {
+  width: 1120px;
+  margin: 0px auto;
+}
+
+.ft-sns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1120px;
+  margin: 10px auto;
+}
+.ft-sns > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
 }/*# sourceMappingURL=main.css.map */
