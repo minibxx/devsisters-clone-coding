@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("./reset.css");
 p {
   white-space: pre-line;
@@ -15,7 +16,7 @@ a {
 body, html {
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
+  font-family: acumin-pro-condensed, Dotum, 돋움, 굴림, arial;
 }
 
 body {
@@ -29,8 +30,7 @@ body {
 }
 .m-video > video {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   left: 0;
   top: 0;
 }
@@ -66,19 +66,24 @@ body {
 
 .atc-con {
   width: 1120px;
-  margin: 0 auto;
+  margin: 20px auto;
+}
+.atc-con > p {
+  width: 65%;
+  margin: 30px 0;
+  line-height: 1.7;
 }
 
 .atc-con-list {
   width: 1120px;
-  margin: 0 auto;
+  margin: 30px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .who {
-  width: 70%;
+  width: 80%;
   margin: 50px auto;
   display: flex;
   justify-content: space-between;
@@ -91,12 +96,44 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
-.who .who-we > div {
+
+.who-list {
+  width: 30%;
   text-align: center;
 }
-.who .who-we > div > p:nth-of-type(1) {
+.who-list > p:nth-of-type(1) {
   color: #fe5e00;
   font-size: 50px;
+}
+
+.img-move {
+  width: 100%;
+  animation-name: ani-1;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.about-v {
+  width: 1120px;
+  margin: 0 auto;
+}
+.about-v > video {
+  object-fit: cover;
+}
+
+.values {
+  width: 30%;
+  text-align: center;
+}
+.values > b {
+  font-size: 30px;
+}
+.values > p {
+  color: #000000;
+  font-size: 12px;
+  padding: 10px 0;
+  line-height: 1.7;
 }/*# sourceMappingURL=about.css.map */

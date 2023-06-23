@@ -16,7 +16,7 @@ a {
 body, html {
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Pretendard", sans-serif;
 }
 
 body {
@@ -30,8 +30,7 @@ body {
 }
 .m-video > video {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   left: 0;
   top: 0;
 }
@@ -163,9 +162,10 @@ header {
 }
 .a1-con figure > img {
   width: 352px;
-  -o-object-fit: fill;
-     object-fit: fill;
+  height: 200px;
+  object-fit: cover;
   border-radius: 18px 18px 0 0;
+  overflow: hidden;
 }
 .a1-con figure > figcaption {
   height: 220px;
@@ -210,6 +210,9 @@ header {
   vertical-align: middle;
   margin: 0 0 0 5px;
 }
+.bt-black > a:hover {
+  background-color: #fe5e00;
+}
 
 .games > figure {
   width: 1120px;
@@ -217,11 +220,9 @@ header {
   position: relative;
 }
 .games > figure > video {
-  -o-object-fit: cover;
-     object-fit: cover;
-  left: 0;
-  top: 0;
+  object-fit: cover;
   border-radius: 30px;
+  position: relative;
 }
 .games > figure > figcaption {
   position: absolute;
@@ -247,6 +248,22 @@ header {
   font-size: 15px;
 }
 
+.coming-soon > a {
+  position: absolute;
+  right: -2%;
+  top: 10%;
+  background-color: #fe5e00;
+  padding: 15px 20px;
+  color: white;
+}
+.coming-soon > a::after {
+  content: "arrow_outward";
+  font-family: "Material Symbols Outlined";
+  vertical-align: middle;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
 .studios {
   width: 1120px;
   margin: 50px auto;
@@ -270,12 +287,16 @@ header {
 .studios .studios-a:nth-of-type(3) {
   background-color: #202121;
 }
+.studios .studios-a:hover {
+  box-shadow: 0px 10px 10px #999999;
+  transform: translateY(-7%);
+  transition: 0.5s;
+}
 
 .studios-it > img {
   width: 100%;
   height: 180px;
-  -o-object-fit: none;
-     object-fit: none;
+  object-fit: none;
   margin: 0;
 }
 
@@ -322,6 +343,11 @@ header {
   align-items: start;
   flex-direction: column;
   background: -80px/cover;
+}
+.stories > div:hover {
+  box-shadow: 0px 10px 10px #999999;
+  transform: translateY(-7%);
+  transition: 0.5s;
 }
 .stories > div:nth-of-type(1) {
   background-image: url(../img/main/16.\ 아워스토리즈1.jpg);

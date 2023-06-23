@@ -15,7 +15,7 @@ p {white-space: pre-line;}
 a {text-decoration: none; color:#000;}
 *{box-sizing: border-box}
 
-body,html {@include reset; font-family: 'Inter', sans-serif;}
+body,html {@include reset; font-family: 'Pretendard', sans-serif;}
 body {position: relative;}
 
 .m-video {
@@ -139,8 +139,10 @@ header{
   margin: 30px;
   > img{
       width: 352px;
-      object-fit: fill;
+      height: 200px;
+      object-fit: cover;
       border-radius: 18px 18px 0 0 ;
+      overflow: hidden;
   }
   > figcaption{
       height: 220px;
@@ -179,6 +181,7 @@ header{
       vertical-align: middle;
       margin: 0 0 0 5px;
     }
+    &:hover{background-color: #fe5e00;}
   }
 }
 
@@ -189,9 +192,8 @@ header{
     position: relative;
     >video {
       object-fit: cover;
-      left: 0;
-      top: 0;
       border-radius: 30px;
+      position: relative;
     }
     >figcaption {
       position: absolute;
@@ -210,10 +212,30 @@ header{
     }
   }
 }
+
+.coming-soon {
+ >a{
+  position: absolute;
+  right:-2%; top: 10%;
+  background-color: #fe5e00;
+  padding: 15px 20px;
+  color: white;
+  
+  &::after{
+    content: 'arrow_outward';
+    font-family: 'Material Symbols Outlined';
+    vertical-align: middle;
+    font-size: 10px;
+    margin-left: 5px;
+    }
+  }
+}
+
 .studios {
   width: $wid;
   margin: 50px auto;
   @include flex (space-between, center){flex-direction: row;}
+
   .studios-a{
     width: 30%;
     height: 400px;
@@ -222,9 +244,19 @@ header{
     &:nth-of-type(1){background-color: #ffe7c4;}
     &:nth-of-type(2){background-color: #FF4347;}
     &:nth-of-type(3){background-color: #202121;}
+    &:hover{
+      box-shadow: 0px 10px 10px #999999;
+      transform: translateY(-7%);
+      transition: 0.5s;
+    }
   }
 }
+
+
+
+
 .studios-it {
+ 
   >img {
     width: 100%;
     height: 180px;
@@ -261,6 +293,11 @@ header{
       border-radius: 20px;
       @include flex(end,start){flex-direction: column;}
       background: -80px / cover; 
+      &:hover{
+        box-shadow: 0px 10px 10px #999999;
+        transform: translateY(-7%);
+        transition: 0.5s;
+      }
 
       &:nth-of-type(1){background-image: url(../img/main/16.\ 아워스토리즈1.jpg);  }
       &:nth-of-type(2){background-image: url(../img/main/17.\ 아워스토리즈2.jpg);  }

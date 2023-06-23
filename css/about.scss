@@ -14,7 +14,7 @@ p {white-space: pre-line;}
 a {text-decoration: none; color:#000;}
 *{box-sizing: border-box}
 
-body,html {@include reset; font-family: 'Inter', sans-serif;}
+body,html {@include reset; font-family: acumin-pro-condensed,Dotum,돋움,굴림,arial;}
 body {position: relative;}
 
 .m-video {
@@ -54,29 +54,65 @@ padding: 500px 0 100px 0;
 }
 .atc-con{
     width: $wid;
-    margin: 0 auto;
+    margin: 20px auto;
+    >p{
+        width: 65%;
+        margin: 30px 0;
+        line-height: 1.7
+    }
 }
 .atc-con-list{
     width: $wid;
-    margin: 0 auto;
+    margin: 30px auto;
     @include flex(space-between,center){}
 }
 .who{
-    width: 70%;
+    width: 80%;
     margin: 50px auto;
     @include flex(space-between,center){flex-direction: column; gap:50px;}
     .who-we{
         width: 100%;
         margin: 0 auto;
-        @include flex(space-between,center){}
-        >div{
-            text-align: center;
-            >p{
-                &:nth-of-type(1){
-                    color: #fe5e00;
-                    font-size: 50px;
-                }
-            }
-        }
+        @include flex(space-between,start){}
+    }
+}
+.who-list{
+    width: 30%;
+    text-align: center;
+    >p:nth-of-type(1){
+        color: #fe5e00;
+        font-size: 50px;
+    }
+}
+.img-move{
+    width: 100%;
+    animation-name: ani-1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+    // @keyframes ani-1{
+    //     0%{transform: translateX(0%);} 
+    //     100%{transform: translateX(-100%) ;}
+    // }
+}
+
+.about-v {
+    width: $wid;
+    margin: 0 auto;
+    >video{
+        object-fit: cover;
+    }
+}
+
+.values{
+    width: 30%;
+    text-align: center;
+    >b{font-size: 30px;}
+    >p{
+        color: #000000;
+        font-size: 12px;
+        padding: 10px 0;
+        line-height: 1.7
     }
 }
