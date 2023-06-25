@@ -1,5 +1,16 @@
 @charset "UTF-8";
 @import url("./reset.css");
+.font-title {
+  font-family: "acumin-pro-condensed";
+  font-weight: 900;
+  font-size: 90px;
+  font-style: italic;
+  color: #fe5e00;
+  width: 1120px;
+  margin: 100px auto 0 auto;
+  line-height: 1;
+}
+
 p {
   white-space: pre-line;
 }
@@ -30,7 +41,8 @@ body {
 }
 .m-video > video {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   left: 0;
   top: 0;
 }
@@ -45,14 +57,16 @@ body {
   justify-content: space-between;
   align-items: start;
   flex-direction: column;
-  font-size: 55px;
-  color: white;
+  line-height: 1;
+  font-family: "acumin-pro-condensed";
   font-weight: 900;
-  font-family: "Pretendard-ExtraBold";
-  font-style: oblique;
+  font-size: 80px;
+  font-style: italic;
+  color: white;
 }
 .brave > p > span {
-  font-size: 100px;
+  font-weight: 900;
+  font-size: 120px;
 }
 
 .title {
@@ -60,8 +74,8 @@ body {
   margin: 120px auto 0 auto;
   color: #fe5e00;
   font-size: 70px;
-  font-family: "Pretendard-ExtraBold";
   font-style: oblique;
+  font-weight: 600;
 }
 
 .atc-con {
@@ -98,14 +112,17 @@ body {
   justify-content: space-between;
   align-items: start;
 }
-
-.who-list {
+.who .who-we .who-list {
   width: 30%;
   text-align: center;
+  font-weight: 900;
+  font-size: 15px;
 }
-.who-list > p:nth-of-type(1) {
+.who .who-we .who-list > p:nth-of-type(1) {
+  font-family: "acumin-pro-condensed";
+  font-weight: 900;
+  font-size: 70px;
   color: #fe5e00;
-  font-size: 50px;
 }
 
 .img-move {
@@ -121,19 +138,66 @@ body {
   margin: 0 auto;
 }
 .about-v > video {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .values {
-  width: 30%;
+  width: 35%;
   text-align: center;
 }
 .values > b {
+  font-weight: 800;
   font-size: 30px;
 }
 .values > p {
   color: #000000;
-  font-size: 12px;
+  font-weight: 500;
+  font-size: 15px;
   padding: 10px 0;
   line-height: 1.7;
+}
+
+.jour-row {
+  width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.jour-col1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-direction: column;
+  padding: 0 50px;
+}
+
+.jour-year {
+  color: #fe5e00;
+  font-weight: 600;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.jour-month {
+  color: #fe5e00;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.jour-event {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.jour-event2 {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.jour-img {
+  width: 100%;
 }/*# sourceMappingURL=about.css.map */

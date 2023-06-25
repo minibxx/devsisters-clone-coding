@@ -10,6 +10,16 @@ $wid : 1120px;
 }
 @mixin font($z,$d) {font-weight: $z;font-size: $d;}
 
+.font-title {
+    font-family: 'acumin-pro-condensed';
+    @include font(900, 90px);
+    font-style: italic;
+    color: #fe5e00;
+    width: $wid;
+    margin: 100px auto 0 auto;
+    line-height: 1;
+  }
+  
 p {white-space: pre-line;}
 a {text-decoration: none; color:#000;}
 *{box-sizing: border-box}
@@ -28,19 +38,21 @@ body {position: relative;}
       top: 0;
     }
   }
+
+
 .brave {
 margin: 0 auto;
 width: $wid;
 padding: 500px 0 100px 0;
     >p { 
         @include flex(space-between,start ){flex-direction: column};
-        font-size: 55px;
+        line-height: 1;
+        font-family: 'acumin-pro-condensed';
+        @include font(900, 80px);
+        font-style: italic;
         color: white;
-        font-weight: 900;
-        font-family: "Pretendard-ExtraBold";
-        font-style: oblique;
         >span {
-            font-size: 100px;
+            @include font(900, 120px);
         }
     }
 }
@@ -49,8 +61,8 @@ padding: 500px 0 100px 0;
     margin: 120px auto 0 auto;
     color: #fe5e00;
     font-size: 70px;
-    font-family: "Pretendard-ExtraBold";
     font-style: oblique;
+    font-weight: 600;
 }
 .atc-con{
     width: $wid;
@@ -74,14 +86,16 @@ padding: 500px 0 100px 0;
         width: 100%;
         margin: 0 auto;
         @include flex(space-between,start){}
-    }
-}
-.who-list{
-    width: 30%;
-    text-align: center;
-    >p:nth-of-type(1){
-        color: #fe5e00;
-        font-size: 50px;
+        .who-list{
+            width: 30%;
+            text-align: center;
+            @include font(900,15px);
+            >p:nth-of-type(1){
+                font-family: 'acumin-pro-condensed';
+                @include font(900, 70px);
+                color: #fe5e00;
+            }
+        }
     }
 }
 .img-move{
@@ -106,13 +120,39 @@ padding: 500px 0 100px 0;
 }
 
 .values{
-    width: 30%;
+    width: 35%;
     text-align: center;
-    >b{font-size: 30px;}
+    >b{@include font(800,30px);}
     >p{
         color: #000000;
-        font-size: 12px;
+        @include font(500,15px);
         padding: 10px 0;
         line-height: 1.7
     }
 }
+
+.jour-row{
+    width: $wid;
+    margin: 0 auto;
+    @include flex(center,start){};
+    
+}
+.jour-col1{
+    @include flex(space-between,end){flex-direction: column;}
+    padding: 0 50px;
+}
+
+.jour-year{
+    color: #fe5e00;
+    @include font(600, 60px);
+    margin-bottom: 20px;
+}
+.jour-month{
+    color: #fe5e00;
+    @include font(600, 40px);
+    margin-bottom: 10px;
+}
+
+.jour-event {@include font(600, 15px);}
+.jour-event2 {@include font(400, 15px);}
+.jour-img {width: 100%;}
