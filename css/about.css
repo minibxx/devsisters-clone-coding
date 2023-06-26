@@ -1,5 +1,10 @@
-@charset "UTF-8";
 @import url("./reset.css");
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Pretendard", sans-serif;
+}
+
 .font-title {
   font-family: "acumin-pro-condensed";
   font-weight: 900;
@@ -24,12 +29,6 @@ a {
   box-sizing: border-box;
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: acumin-pro-condensed, Dotum, 돋움, 굴림, arial;
-}
-
 body {
   position: relative;
 }
@@ -41,8 +40,7 @@ body {
 }
 .m-video > video {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   left: 0;
   top: 0;
 }
@@ -119,7 +117,6 @@ body {
   font-size: 15px;
 }
 .who .who-we .who-list > p:nth-of-type(1) {
-  font-family: "acumin-pro-condensed";
   font-weight: 900;
   font-size: 70px;
   color: #fe5e00;
@@ -132,14 +129,21 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+@keyframes ani-1 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
 .about-v {
   width: 1120px;
   margin: 0 auto;
 }
 .about-v > video {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .values {
@@ -160,10 +164,16 @@ body {
 
 .jour-row {
   width: 1120px;
-  margin: 0 auto;
+  margin: 80px auto;
   display: flex;
   justify-content: center;
   align-items: start;
+}
+.jour-row > div:nth-of-type(2) {
+  width: 0;
+  height: 1300px;
+  border: 2px solid #ff8200;
+  margin: 0 50px;
 }
 
 .jour-col1 {
@@ -171,33 +181,54 @@ body {
   justify-content: space-between;
   align-items: end;
   flex-direction: column;
-  padding: 0 50px;
 }
 
-.jour-year {
+.j-year {
   color: #fe5e00;
-  font-weight: 600;
-  font-size: 60px;
+  font-weight: 800;
+  font-size: 50px;
   margin-bottom: 20px;
+  letter-spacing: -5px;
 }
 
-.jour-month {
-  color: #fe5e00;
+.j-month {
+  color: #ff8200;
   font-weight: 600;
   font-size: 40px;
   margin-bottom: 10px;
 }
 
-.jour-event {
+.j-event {
   font-weight: 600;
   font-size: 15px;
+  margin-bottom: 20px;
 }
 
-.jour-event2 {
+.j-event2 {
   font-weight: 400;
   font-size: 15px;
+  margin-bottom: 10px;
 }
 
-.jour-img {
+.j-img {
   width: 100%;
+  margin: 10px 0;
+}
+
+.bt-black {
+  width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+.bt-black > a {
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 100px;
+}
+.bt-black > a:hover {
+  background-color: #fe5e00;
 }/*# sourceMappingURL=about.css.map */
