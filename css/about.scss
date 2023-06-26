@@ -171,9 +171,7 @@ padding: 500px 0 100px 0;
 .bt-black {
     width: $wid;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-
+    @include flex(center, center){};
     @include font(600, 16px);
     >a {
       background-color: black;
