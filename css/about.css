@@ -40,7 +40,8 @@ body {
 }
 .m-video > video {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   left: 0;
   top: 0;
 }
@@ -121,6 +122,9 @@ body {
   font-size: 70px;
   color: #fe5e00;
 }
+.who .who-we .who-list > p:nth-of-type(1) code {
+  font-family: inherit;
+}
 
 .img-move {
   width: 100%;
@@ -143,7 +147,8 @@ body {
   margin: 0 auto;
 }
 .about-v > video {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .values {
@@ -167,11 +172,10 @@ body {
   margin: 80px auto;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: stretch;
 }
 .jour-row > div:nth-of-type(2) {
   width: 0;
-  height: 1300px;
   border: 2px solid #ff8200;
   margin: 0 50px;
 }

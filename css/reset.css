@@ -18,14 +18,51 @@ img {vertical-align: top;}
 
 a {
     text-decoration: none;
-    color: inherit; /* 부모의 값을 그대로 상속받겠다는 뜻 */
+    color: inherit; 
 }
 
 a, b, i, em, strong, span {display: inline-block;} 
 
 figure{margin: 0;}
 
+header{
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
 
+.nav-b {
+    width: 1120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .nav-b > div {
+    color: white;
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  .nav-b > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  .nav-b > ul > li {
+    list-style-type: none;
+    padding: 0 40px;
+    color: white;
+  }
+  .nav-b > ul > li > a {
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+  }
+  
 @font-face {
     font-family: 'Pretendard';
     font-weight: 800;
