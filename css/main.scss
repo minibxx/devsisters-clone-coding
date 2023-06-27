@@ -283,7 +283,7 @@ header{
 
 .st-fc{
   >b {padding: 30px; font-size: 25px;}
-  >p {padding: 0 40px; font-size: 15px; line-height: 1.7}
+  >p {padding: 0 40px; font-size: 17px; line-height: 1.7}
 }
 .text-white{color: white;}
   .line-brown{
@@ -323,6 +323,8 @@ header{
       >p {
         padding: 0 20px;
         color: white;
+        line-height: 1.5;
+        @include font(500,17px);
       }
       >a{
           background-color: #ff8200;

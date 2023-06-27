@@ -22,13 +22,21 @@ $wid : 1280px;
     font-style: italic;
     color: #fe5e00;
     width: $wid;
-    margin: 100px auto 0 auto;
+    margin: 100px auto 50px auto;
   }
-
+.in {
+    width: $wid;
+    margin: 0 auto;
+    @include flex(space-between,center){};
+    >.in-date{
+        width: 300px; text-align: right;
+        @include font(400, 20px);
+    }
+}
 .in-title {
     @include font(600, 50px);
     width: $wid;
-    margin: 50px auto;
+    margin: 20px auto;
 }
 .invest1 {
     width: $wid;
@@ -48,6 +56,9 @@ $wid : 1280px;
         position: absolute;
         right: 3%;
         bottom: 35%;
+        >code {
+            font-family: inherit;
+        }
     }
     >p:nth-of-type(2){
         color:#285fd6;
@@ -87,19 +98,21 @@ $wid : 1280px;
 .table{
     width: $wid;
     margin: 0 auto;
-    @include flex (space-between, center){}
+    @include flex (flex-start, center){}
     gap : 3%;   
 }
 .table1 {
-    width: $wid/2;
+    width: 48.5%;
 }
 .table-title {
     @include font(600, 50px);
     margin: 50px auto;
 }
 .table-border {
-    width: $wid/2;
+    // width: $wid/2;
+    width: 100%;
     margin: 50px 0;
+  
 
     th {
         text-align: start;
@@ -110,7 +123,12 @@ $wid : 1280px;
     td {
         border: 1px solid rgb(197, 197, 197);
         border-width: 0 0 1px 0;
-        padding: 15px 20px;
+        padding: 20px 20px;
+        & :hover{color: #fe5e00;}
+        &.td-line{
+            border: 3px solid rgb(88, 88, 88);
+            border-width: 0 0 3px 0;
+        }
     }
 }
 

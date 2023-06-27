@@ -11,14 +11,28 @@
   font-style: italic;
   color: #fe5e00;
   width: 1280px;
-  margin: 100px auto 0 auto;
+  margin: 100px auto 50px auto;
+}
+
+.in {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.in > .in-date {
+  width: 300px;
+  text-align: right;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .in-title {
   font-weight: 600;
   font-size: 50px;
   width: 1280px;
-  margin: 50px auto;
+  margin: 20px auto;
 }
 
 .invest1 {
@@ -44,6 +58,9 @@
   position: absolute;
   right: 3%;
   bottom: 35%;
+}
+.in-border > p:nth-of-type(1) > code {
+  font-family: inherit;
 }
 .in-border > p:nth-of-type(2) {
   color: #285fd6;
@@ -90,13 +107,13 @@
   width: 1280px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: 3%;
 }
 
 .table1 {
-  width: 640px;
+  width: 48.5%;
 }
 
 .table-title {
@@ -106,7 +123,7 @@
 }
 
 .table-border {
-  width: 640px;
+  width: 100%;
   margin: 50px 0;
 }
 .table-border th {
@@ -118,7 +135,14 @@
 .table-border td {
   border: 1px solid rgb(197, 197, 197);
   border-width: 0 0 1px 0;
-  padding: 15px 20px;
+  padding: 20px 20px;
+}
+.table-border td :hover {
+  color: #fe5e00;
+}
+.table-border td.td-line {
+  border: 3px solid rgb(88, 88, 88);
+  border-width: 0 0 3px 0;
 }
 
 .bt-black {
