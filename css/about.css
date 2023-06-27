@@ -122,6 +122,9 @@ body {
   font-size: 70px;
   color: #fe5e00;
 }
+.who .who-we .who-list > p:nth-of-type(1) > code {
+  font-family: inherit;
+}
 
 .img-move {
   width: 100%;
