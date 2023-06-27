@@ -71,9 +71,9 @@ header{
   }
   >p { 
     position: absolute;
-    top : 50px;
+    top : 500px;
     left: 50%;
-    transform: translateX(-100%);
+    transform: translateX(-115%);
     @include flex(space-between,start ){flex-direction: column};
     line-height: 1;
     font-family: 'acumin-pro-condensed';
@@ -305,7 +305,7 @@ header{
 
     >div {
       width: 22%;
-      height: 250px;
+      height: 280px;
       border-radius: 20px;
       @include flex(end,start){flex-direction: column;}
       @include font(500,15px);
@@ -334,6 +334,29 @@ header{
         }
     }
   }
+
+ .banner{
+  width: $wid;
+  margin: 100px auto;
+  background-color: #f8e8da;
+  border-radius: 10px;
+  position: relative;
+  .banner-col{
+    padding: 50px 60px;
+  }
+  >img{
+    position: absolute;
+    top : -10%;
+    right: 10%
+  }
+ }
+
+ .b-title{
+  @include font(900, 60px);
+  margin: 0 0 30px 0; 
+  line-height: 0.9;
+ }
+
 footer{
   position: relative;
   margin-top: 120px;

@@ -77,16 +77,15 @@ header {
 }
 .m-video > video {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   left: 0;
   top: 0;
 }
 .m-video > p {
   position: absolute;
-  top: 50px;
+  top: 500px;
   left: 50%;
-  transform: translateX(-100%);
+  transform: translateX(-115%);
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -166,8 +165,7 @@ header {
 .a1-con figure > img {
   width: 352px;
   height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 18px 18px 0 0;
   overflow: hidden;
 }
@@ -227,8 +225,7 @@ header {
   position: relative;
 }
 .games > figure > video {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 30px;
   position: relative;
 }
@@ -313,8 +310,7 @@ header {
 .studios-it > img {
   width: 400px;
   height: 180px;
-  -o-object-fit: none;
-     object-fit: none;
+  object-fit: none;
   margin: 0;
 }
 
@@ -354,7 +350,7 @@ header {
 }
 .stories > div {
   width: 22%;
-  height: 250px;
+  height: 280px;
   border-radius: 20px;
   display: flex;
   justify-content: end;
@@ -392,6 +388,29 @@ header {
   border-radius: 25px;
   font-size: 12px;
   margin: 20px;
+}
+
+.banner {
+  width: 1280px;
+  margin: 100px auto;
+  background-color: #f8e8da;
+  border-radius: 10px;
+  position: relative;
+}
+.banner .banner-col {
+  padding: 50px 60px;
+}
+.banner > img {
+  position: absolute;
+  top: -10%;
+  right: 10%;
+}
+
+.b-title {
+  font-weight: 900;
+  font-size: 60px;
+  margin: 0 0 30px 0;
+  line-height: 0.9;
 }
 
 footer {

@@ -1,0 +1,144 @@
+@import url("./reset.css");
+.hd-zone {
+  height: 80px;
+  background-color: #fe5e00;
+}
+
+.font-title {
+  font-family: "acumin-pro-condensed";
+  font-weight: 900;
+  font-size: 90px;
+  font-style: italic;
+  color: #fe5e00;
+  width: 1280px;
+  margin: 100px auto 0 auto;
+}
+
+.in-title {
+  font-weight: 600;
+  font-size: 50px;
+  width: 1280px;
+  margin: 50px auto;
+}
+
+.invest1 {
+  width: 1280px;
+  margin: 30px auto;
+}
+
+.in-border {
+  height: 250px;
+  border: 1px solid lightgray;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  font-weight: 600;
+  font-size: 25px;
+}
+.in-border > div:nth-of-type(2) {
+  color: #fe5e00;
+}
+.in-border > p:nth-of-type(1) {
+  font-weight: 500;
+  font-size: 70px;
+  position: absolute;
+  right: 3%;
+  bottom: 35%;
+}
+.in-border > p:nth-of-type(2) {
+  color: #285fd6;
+  font-weight: 600;
+  font-size: 20px;
+  position: absolute;
+  right: 3%;
+  bottom: 15%;
+}
+.in-border > p:nth-of-type(2)::before {
+  content: "arrow_drop_down";
+  font-family: "Material Symbols Outlined";
+  vertical-align: middle;
+  font-size: 30px;
+}
+.in-border > img {
+  position: absolute;
+  right: 10%;
+  bottom: 15%;
+}
+
+.in-row {
+  width: 1280px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.invest2 {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.invest2:hover {
+  box-shadow: 0px 10px 10px #999999;
+  transform: translateY(-7%);
+  transition: 0.5s;
+}
+
+.table {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3%;
+}
+
+.table1 {
+  width: 640px;
+}
+
+.table-title {
+  font-weight: 600;
+  font-size: 50px;
+  margin: 50px auto;
+}
+
+.table-border {
+  width: 640px;
+  margin: 50px 0;
+}
+.table-border th {
+  text-align: start;
+  padding: 20px 20px;
+  background-color: #fe5e00;
+  color: white;
+}
+.table-border td {
+  border: 1px solid rgb(197, 197, 197);
+  border-width: 0 0 1px 0;
+  padding: 15px 20px;
+}
+
+.bt-black {
+  width: 1280px;
+  margin: 20px auto;
+  font-weight: 600;
+  font-size: 16px;
+}
+.bt-black > a {
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 100px;
+}
+.bt-black > a::after {
+  content: "arrow_forward_ios";
+  font-family: "Material Symbols Outlined";
+  vertical-align: middle;
+  margin: 0 0 0 5px;
+}
+.bt-black > a:hover {
+  background-color: #fe5e00;
+}/*# sourceMappingURL=investors.css.map */

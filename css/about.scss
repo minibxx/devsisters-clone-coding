@@ -1,4 +1,4 @@
-$wid : 1120px;
+$wid : 1280px;
 @import url("./reset.css");
 
 @mixin reset {margin:0;padding:0;}
@@ -141,22 +141,29 @@ padding: 500px 0 100px 0;
     width: $wid;
     margin: 80px auto;
     @include flex(center,stretch){};
-    > div:nth-of-type(2){
+    > div:nth-of-type(2) {
         width: 0;
        
         border: 2px solid #ff8200;
         margin: 0 50px;
     }
+    >img {
+        width: 150px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
-.jour-col1{
+.col1{
     @include flex(space-between,end){flex-direction: column;}
 }
+
+.jour-col{margin-top: 150px;}
 
 .j-year{
     color: #fe5e00;
     @include font(800, 50px);
     margin-bottom: 20px;
-    letter-spacing: -5px;
 }
 .j-month{
     color: #ff8200;

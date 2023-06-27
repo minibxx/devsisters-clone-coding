@@ -11,7 +11,7 @@ body, html {
   font-size: 90px;
   font-style: italic;
   color: #fe5e00;
-  width: 1120px;
+  width: 1280px;
   margin: 100px auto 0 auto;
   line-height: 1;
 }
@@ -40,15 +40,14 @@ body {
 }
 .m-video > video {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   left: 0;
   top: 0;
 }
 
 .brave {
   margin: 0 auto;
-  width: 1120px;
+  width: 1280px;
   padding: 500px 0 100px 0;
 }
 .brave > p {
@@ -69,7 +68,7 @@ body {
 }
 
 .title {
-  width: 1120px;
+  width: 1280px;
   margin: 120px auto 0 auto;
   color: #fe5e00;
   font-size: 70px;
@@ -78,7 +77,7 @@ body {
 }
 
 .atc-con {
-  width: 1120px;
+  width: 1280px;
   margin: 20px auto;
 }
 .atc-con > p {
@@ -88,7 +87,7 @@ body {
 }
 
 .atc-con-list {
-  width: 1120px;
+  width: 1280px;
   margin: 30px auto;
   display: flex;
   justify-content: space-between;
@@ -143,12 +142,11 @@ body {
 }
 
 .about-v {
-  width: 1120px;
+  width: 1280px;
   margin: 0 auto;
 }
 .about-v > video {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .values {
@@ -168,7 +166,7 @@ body {
 }
 
 .jour-row {
-  width: 1120px;
+  width: 1280px;
   margin: 80px auto;
   display: flex;
   justify-content: center;
@@ -179,12 +177,22 @@ body {
   border: 2px solid #ff8200;
   margin: 0 50px;
 }
+.jour-row > img {
+  width: 150px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-.jour-col1 {
+.col1 {
   display: flex;
   justify-content: space-between;
   align-items: end;
   flex-direction: column;
+}
+
+.jour-col {
+  margin-top: 150px;
 }
 
 .j-year {
@@ -192,7 +200,6 @@ body {
   font-weight: 800;
   font-size: 50px;
   margin-bottom: 20px;
-  letter-spacing: -5px;
 }
 
 .j-month {
@@ -220,7 +227,7 @@ body {
 }
 
 .bt-black {
-  width: 1120px;
+  width: 1280px;
   margin: 0 auto;
   display: flex;
   justify-content: center;

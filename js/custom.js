@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
     $('body').prepend('<header></header>');
-    // $('body').append('<footer></footer>');
+    //$('body').append('<footer></footer>');
     $('header').load('./header.html nav');
     
     $(".counter1 code").counterUp({
