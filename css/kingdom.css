@@ -40,7 +40,8 @@ body {
 }
 .m-video > video {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   left: 0;
   top: 0;
 }/*# sourceMappingURL=kingdom.css.map */

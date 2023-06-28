@@ -81,7 +81,8 @@ body {
 .m-video > img {
   width: 100%;
   height: 850px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   left: 0;
   top: 0;
 }
@@ -89,6 +90,7 @@ body {
 .brave {
   margin: 0 auto;
   width: 1280px;
+  height: 850px;
   padding: 500px 0 100px 0;
 }
 .brave > p {
@@ -131,7 +133,8 @@ body {
 .a1-con figure > img {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 18px 18px 0 0;
   overflow: hidden;
 }

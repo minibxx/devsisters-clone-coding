@@ -40,7 +40,8 @@ body {
 }
 .m-video > video {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   left: 0;
   top: 0;
 }
@@ -48,6 +49,7 @@ body {
 .brave {
   margin: 0 auto;
   width: 1280px;
+  height: 850px;
   padding: 500px 0 100px 0;
 }
 .brave > p {
@@ -146,7 +148,8 @@ body {
   margin: 0 auto;
 }
 .about-v > video {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .values {

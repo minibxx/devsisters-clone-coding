@@ -81,6 +81,7 @@ body {position: relative;}
 .brave {
 margin: 0 auto;
 width: $wid;
+height: 850px;
 padding: 500px 0 100px 0;
     >p { 
         @include flex(space-between,start ){flex-direction: column};
