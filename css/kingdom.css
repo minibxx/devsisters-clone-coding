@@ -1,0 +1,46 @@
+@import url("./reset.css");
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Pretendard", sans-serif;
+}
+
+.font-title {
+  font-family: "acumin-pro-condensed";
+  font-weight: 900;
+  font-size: 90px;
+  font-style: italic;
+  color: #fe5e00;
+  width: 1280px;
+  margin: 100px auto 0 auto;
+  line-height: 1;
+}
+
+p {
+  white-space: pre-line;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+.m-video {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.m-video > video {
+  width: 100%;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+}/*# sourceMappingURL=kingdom.css.map */
