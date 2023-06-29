@@ -30,7 +30,15 @@ body {
 .m-video > img {
   width: 100%;
   height: 850px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  left: 0;
+  top: 0;
+}
+.m-video > video {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   left: 0;
   top: 0;
 }
@@ -123,6 +131,17 @@ body {
   line-height: 1;
 }
 
+.title-num {
+  font-family: "acumin-pro-condensed";
+  font-weight: 900;
+  font-size: 90px;
+  color: #fe5e00;
+  margin: 0 auto;
+}
+.title-num > code {
+  font-family: inherit;
+}
+
 .store-ic a {
   margin: 0 5px;
   background-color: #000;
@@ -188,13 +207,11 @@ body {
   margin: 0 auto;
   width: 1280px;
   height: 850px;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .trailer > div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -225,13 +242,14 @@ body {
 .feat {
   color: #fe5e00;
 }
-.feat > div:nth-of-type(1) {
+.feat > video {
+  border-radius: 10px;
+}
+
+.feat-title {
   font-weight: 800;
   font-size: 30px;
   margin-top: 80px;
-}
-.feat > video {
-  border-radius: 10px;
 }
 
 .feat-text {
@@ -239,4 +257,90 @@ body {
   font-size: 15px;
   margin: 20px 0;
   line-height: 1.5;
+}
+
+.jour-row {
+  min-height: 120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  position: relative;
+}
+.jour-row > img {
+  width: 150px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+.orange-line {
+  width: 0;
+  border: 2px solid #fe5e00;
+  margin: 0 80px;
+}
+
+.col1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 0 50px 0;
+  width: 400px;
+}
+
+.col2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 0 0 50px 0;
+  width: 400px;
+}
+
+.j-month {
+  color: #fe5e00;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.j-event {
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.history {
+  padding: 100px 0;
+}
+
+.j-circle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #fe5e00;
+  border-radius: 50px;
+}
+
+.h-img {
+  width: 1280px;
+  position: absolute;
+  bottom: 10%;
+}
+.h-img > img {
+  width: 40%;
+  animation: rhkdus 1s infinite alternate;
+  transition: 1s;
+}
+@keyframes rhkdus {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(5%);
+  }
 }/*# sourceMappingURL=kingdom.css.map */
