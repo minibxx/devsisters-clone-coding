@@ -1,0 +1,262 @@
+@media screen and (min-width: 721px) and (max-width: 1020px) {
+  * {
+    box-sizing: border-box;
+  }
+  header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  .nav-b {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .nav-b > a {
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+  }
+  .nav-b > div {
+    color: white;
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  .nav-b > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  .nav-b > ul > li {
+    list-style-type: none;
+    padding-left: 10px;
+    color: white;
+  }
+  .nav-b > ul > li > a {
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+  }
+  .nav-b > ul > li .burger-ic {
+    list-style-type: none;
+    padding-left: 10px;
+    color: white;
+  }
+  footer {
+    position: relative;
+    margin-top: 120px;
+    width: 100%;
+    background-color: #fe5e00;
+  }
+  .ft {
+    color: white;
+    padding: 100px 0 80px 0;
+  }
+  .ft-top {
+    width: 800px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .ft-top > div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    font-size: 15px;
+  }
+  .ft-top div:nth-of-type(2) {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    align-items: center;
+  }
+  .ft-top div:nth-of-type(2) > p:nth-of-type(2)::after {
+    content: "expand_more";
+    font-family: "Material Symbols Outlined";
+    vertical-align: middle;
+    font-size: 25px;
+    margin: 0 0 0 5px;
+  }
+  .ft-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+  }
+  .ft-list > li {
+    margin: 10px 0;
+  }
+  .ft-list > li::after {
+    content: "arrow_outward";
+    font-family: "Material Symbols Outlined";
+    vertical-align: middle;
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  .ft-logo {
+    width: 800px;
+    margin: 0 auto;
+  }
+  .ft-logo > svg {
+    width: 80%;
+    padding: 120px 0 20px 0;
+  }
+  .ft-last {
+    width: 800px;
+    margin: 0px auto;
+  }
+  .ft-sns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    margin: 10px auto;
+  }
+  .ft-sns > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 720px) {
+  * {
+    box-sizing: border-box;
+  }
+  header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  .nav-b {
+    width: 580px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .nav-b > a {
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+  }
+  .nav-b > div {
+    color: white;
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  .nav-b > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  .nav-b > ul > li {
+    list-style-type: none;
+    padding-left: 10px;
+    color: white;
+  }
+  .nav-b > ul > li > a {
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+  }
+  .nav-b > ul > li .burger-ic {
+    list-style-type: none;
+    padding-left: 10px;
+    color: white;
+  }
+  footer {
+    position: relative;
+    margin-top: 120px;
+    width: 100%;
+    background-color: #fe5e00;
+  }
+  .ft {
+    color: white;
+    padding: 100px 0 80px 0;
+  }
+  .ft-top {
+    width: 580px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .ft-top > div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    font-size: 10px;
+  }
+  .ft-top div:nth-of-type(2) {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    align-items: center;
+  }
+  .ft-top div:nth-of-type(2) > p:nth-of-type(2)::after {
+    content: "expand_more";
+    font-family: "Material Symbols Outlined";
+    vertical-align: middle;
+    font-size: 20px;
+    margin: 0 0 0 5px;
+  }
+  .ft-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 10px;
+    gap: 20px;
+  }
+  .ft-list > li {
+    margin: 10px 0;
+  }
+  .ft-list > li::after {
+    content: "arrow_outward";
+    font-family: "Material Symbols Outlined";
+    vertical-align: middle;
+    font-size: 18px;
+    margin-left: 5px;
+  }
+  .ft-logo {
+    width: 580px;
+    margin: 0 auto;
+  }
+  .ft-logo > svg {
+    width: 80%;
+    padding: 120px 0 20px 0;
+  }
+  .ft-last {
+    width: 580px;
+    margin: 0px auto;
+  }
+  .ft-sns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 580px;
+    margin: 10px auto;
+  }
+  .ft-sns > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+}/*# sourceMappingURL=m-reset.css.map */

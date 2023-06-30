@@ -40,8 +40,7 @@ body {
 }
 .m-video > video {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   left: 0;
   top: 0;
 }
@@ -148,8 +147,7 @@ body {
   margin: 0 auto;
 }
 .about-v > video {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .values {
