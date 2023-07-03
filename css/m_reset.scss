@@ -1,239 +1,315 @@
 @media screen and (min-width: 721px) and (max-width: 1020px) {
-    @import "_mixin";
-    * {box-sizing: border-box;}
+  @import "_mixin";
 
-    $wid : 800px;
+  * {
+    box-sizing: border-box;
+  }
 
-    
-    header{
-        position: fixed; 
-        left: 0;
-        top: 0;
-        width: 100%;
-        z-index: 9999;
-    }
+  $wid : 800px;
+
+
+  header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+
     .nav-b {
-        width: $wid;
-        @include flex(space-between,center){}
-        margin: 0 auto;
-        padding: 20px 0;
-        > a{
-            @include font(600, 25px);
+      width: $wid;
+
+      @include flex(space-between, center) {}
+
+      margin: 0 auto;
+      padding: 20px 0;
+
+      >a {
+        @include font(600, 25px);
+        color: white;
+      }
+
+      >div {
+        color: white;
+        @include font(900, 1.5rem);
+      }
+
+      >ul {
+        @include flex(space-between, center) {}
+
+        padding: 0;
+
+        >li {
+          list-style-type: none;
+          padding-left: 10px;
+          color: white;
+
+          >a {
+            @include font(600, 14px);
             color: white;
           }
-        > div {
-          color: white;
-          @include font(900, 1.5rem);
-        }
-        > ul {
-          @include flex(space-between,center){}
-          padding: 0;
-            > li {
-                list-style-type: none;
-                padding-left: 10px;
-                color: white;
-                > a{
-                  @include font(600, 14px);
-                  color: white;
-                }
-            .burger-ic {
-                list-style-type: none;
-                padding-left: 10px;
-                color: white;} 
+
+          .burger-ic {
+            list-style-type: none;
+            padding-left: 10px;
+            color: white;
           }
         }
       }
-    
-    footer{
+    }
+  }
+
+
+  footer {
     position: relative;
     margin-top: 120px;
     width: 100%;
     background-color: #fe5e00;
-    }
+
     .ft {
-    color: white;
-    padding: 100px 0 80px 0;
+      color: white;
+      padding: 100px 0 80px 0;
     }
-    .ft-top{
-    width: $wid;
-    margin: 0px auto;
-    @include flex(space-between, start){}
-    >div:nth-of-type(1) {
-        @include flex(space-between, start){flex-direction: column;}
+
+    .ft-top {
+      width: $wid;
+      margin: 0px auto;
+
+      @include flex(space-between, start) {}
+
+      >div:nth-of-type(1) {
+        @include flex(space-between, start) {
+          flex-direction: column;
+        }
+
         font-size: 15px;
-    }
-    div:nth-of-type(2) {
+      }
+
+      div:nth-of-type(2) {
         width: 20%;
-        @include flex(space-between, start){}
+
+        @include flex(space-between, start) {}
+
         align-items: center;
-        > p:nth-of-type(2)::after{
-        content: 'expand_more';
-        font-family: 'Material Symbols Outlined';
-        vertical-align: middle;
-        font-size: 25px;
-        margin: 0 0 0 5px;
+
+        >p:nth-of-type(2)::after {
+          content: 'expand_more';
+          font-family: 'Material Symbols Outlined';
+          vertical-align: middle;
+          font-size: 25px;
+          margin: 0 0 0 5px;
         }
+      }
     }
-    }       
-    .ft-list{
-    @include flex(space-between, center){
+
+    .ft-list {
+      @include flex(space-between, center) {
         gap: 25px;
-    }
-    >li {
+      }
+
+      >li {
         margin: 10px 0;
-        &::after{
-        content: 'arrow_outward';
-        font-family: 'Material Symbols Outlined';
-        vertical-align: middle;
-        font-size: 10px;
-        margin-left: 5px;
+
+        &::after {
+          content: 'arrow_outward';
+          font-family: 'Material Symbols Outlined';
+          vertical-align: middle;
+          font-size: 10px;
+          margin-left: 5px;
         }
-    
+
+      }
     }
-    }
-      
-      
-    .ft-logo{
-    width: $wid;
-    margin: 0 auto;
-    >svg {
+
+
+    .ft-logo {
+      width: $wid;
+      margin: 0 auto;
+
+      >svg {
         width: 80%;
-        padding: 120px 0 20px 0; 
+        padding: 120px 0 20px 0;
+      }
     }
+
+    .ft-last {
+      width: $wid;
+      margin: 0px auto;
     }
-    .ft-last{
-    width: $wid;
-    margin: 0px auto;
+
+    .ft-sns {
+      @include flex(space-between, center) {}
+
+      ;
+      width: $wid;
+      margin: 10px auto;
+
+      >ul {
+        @include flex(space-between, center) {
+          gap: 30px
+        }
+
+        ;
+
+      }
     }
-    .ft-sns{
-    @include flex(space-between, center){};
-    width: $wid;
-    margin: 10px auto;
-    >ul{
-        @include flex(space-between, center){gap: 30px};
-        
-    }
-    }
-    
-    
+  }
+
+
+
 }
 
 @media screen and (max-width: 720px) {
   @import "_mixin";
-  * {box-sizing: border-box;}
+
+  * {
+    box-sizing: border-box;
+  }
 
   $wid : 580px;
 
-  
-  header{
-      position: fixed; 
-      left: 0;
-      top: 0;
-      width: 100%;
-      z-index: 9999;
-  }
-  .nav-b {
+
+  header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+
+    .nav-b {
       width: $wid;
-      @include flex(space-between,center){}
+
+      @include flex(space-between, center) {}
+
       margin: 0 auto;
       padding: 20px 0;
-      > a{
-          @include font(600, 25px);
-          color: white;
-        }
-      > div {
+
+      >a {
+        @include font(600, 25px);
+        color: white;
+      }
+
+      >div {
         color: white;
         @include font(900, 1.5rem);
       }
-      > ul {
-        @include flex(space-between,center){}
-        padding: 0;
-          > li {
-              list-style-type: none;
-              padding-left: 10px;
-              color: white;
-              > a{
-                @include font(600, 14px);
-                color: white;
-              }
-          .burger-ic {
-              list-style-type: none;
-              padding-left: 10px;
-              color: white;} 
-        }
-      }
-    }
-  
-  footer{
-  position: relative;
-  margin-top: 120px;
-  width: 100%;
-  background-color: #fe5e00;
-  }
-  .ft {
-  color: white;
-  padding: 100px 0 80px 0;
-  }
-  .ft-top{
-  width: $wid;
-  margin: 0px auto;
-  @include flex(space-between, start){}
-  >div:nth-of-type(1) {
-      @include flex(space-between, start){flex-direction: column;}
-      font-size: 10px;
-  }
-  div:nth-of-type(2) {
-      width: 20%;
-      @include flex(space-between, start){}
-      align-items: center;
-      > p:nth-of-type(2)::after{
-      content: 'expand_more';
-      font-family: 'Material Symbols Outlined';
-      vertical-align: middle;
-      font-size: 20px;
-      margin: 0 0 0 5px;
-      }
-  }
-  }       
-  .ft-list{
-    @include flex(space-between, center){}
-    @include font(400,10px);
-    gap: 20px;
 
-    >li {
-        margin: 10px 0;
-        &::after{
-        content: 'arrow_outward';
-        font-family: 'Material Symbols Outlined';
-        vertical-align: middle;
-        font-size: 18px;
-        margin-left: 5px;
+      >ul {
+        @include flex(space-between, center) {}
+
+        padding: 0;
+
+        >li {
+          list-style-type: none;
+          padding-left: 10px;
+          color: white;
+
+          >a {
+            @include font(600, 14px);
+            color: white;
+          }
+
+          .burger-ic {
+            list-style-type: none;
+            padding-left: 10px;
+            color: white;
+          }
         }
-    
+      }
     }
   }
-    
-    
-  .ft-logo{
-  width: $wid;
-  margin: 0 auto;
-  >svg {
-      width: 80%;
-      padding: 120px 0 20px 0; 
+
+
+  footer {
+    position: relative;
+    margin-top: 120px;
+    width: 100%;
+    background-color: #fe5e00;
+
+    .ft {
+      color: white;
+      padding: 100px 0 80px 0;
+    }
+
+    .ft-top {
+      width: $wid;
+      margin: 0px auto;
+
+      @include flex(space-between, start) {}
+
+      >div:nth-of-type(1) {
+        @include flex(space-between, start) {
+          flex-direction: column;
+        }
+
+        font-size: 10px;
+      }
+
+      div:nth-of-type(2) {
+        width: 20%;
+
+        @include flex(space-between, start) {}
+
+        align-items: center;
+
+        >p:nth-of-type(2)::after {
+          content: 'expand_more';
+          font-family: 'Material Symbols Outlined';
+          vertical-align: middle;
+          font-size: 20px;
+          margin: 0 0 0 5px;
+        }
+      }
+    }
+
+    .ft-list {
+      @include flex(space-between, center) {}
+
+      @include font(400, 10px);
+      gap: 20px;
+
+      >li {
+        margin: 10px 0;
+
+        &::after {
+          content: 'arrow_outward';
+          font-family: 'Material Symbols Outlined';
+          vertical-align: middle;
+          font-size: 18px;
+          margin-left: 5px;
+        }
+
+      }
+    }
+
+
+    .ft-logo {
+      width: $wid;
+      margin: 0 auto;
+
+      >svg {
+        width: 80%;
+        padding: 120px 0 20px 0;
+      }
+    }
+
+    .ft-last {
+      width: $wid;
+      margin: 0px auto;
+    }
+
+    .ft-sns {
+      @include flex(space-between, center) {}
+
+      width: $wid;
+      margin: 10px auto;
+
+      >ul {
+        @include flex(space-between, center) {
+          gap: 30px;
+        }
+      }
+    }
   }
-  }
-  .ft-last{
-  width: $wid;
-  margin: 0px auto;
-  }
-  .ft-sns{
-  @include flex(space-between, center){};
-  width: $wid;
-  margin: 10px auto;
-  >ul{
-      @include flex(space-between, center){gap: 30px};
-      
-  }
-  }
-  
+
+
 }

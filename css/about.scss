@@ -33,25 +33,25 @@ body {position: relative;}
       left: 0;
       top: 0;
     }
-  }
+}
 
 
 .brave {
-margin: 0 auto;
-width: $wid;
-height: 850px;
-padding: 500px 0 100px 0;
-    >p { 
-        @include flex(space-between,start ){flex-direction: column};
-        line-height: 1;
-        font-family: 'acumin-pro-condensed';
-        @include font(900, 80px);
-        font-style: italic;
-        color: white;
-        >span {
-            @include font(900, 120px);
+    margin: 0 auto;
+    width: $wid;
+    height: 850px;
+    padding: 500px 0 100px 0;
+        >p { 
+            @include flex(space-between,start ){flex-direction: column};
+            line-height: 1;
+            font-family: 'acumin-pro-condensed';
+            @include font(900, 80px);
+            font-style: italic;
+            color: white;
+            >span {
+                @include font(900, 120px);
+            }
         }
-    }
 }
 .title {
     width: $wid;
@@ -114,6 +114,7 @@ padding: 500px 0 100px 0;
     width: $wid;
     margin: 0 auto;
     >video{
+        width: 100%;
         object-fit: cover;
     }
 }

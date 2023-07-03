@@ -74,6 +74,7 @@
             
         }
     }
+
     .atc-con-list{
         width: $wid;
         margin: 30px auto;
@@ -118,6 +119,7 @@
         width: $wid;
         margin: 0 auto;
         >video{
+            width: 100%;
             object-fit: cover;
         }
     }
