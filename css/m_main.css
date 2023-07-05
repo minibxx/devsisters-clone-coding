@@ -32,7 +32,8 @@
   }
   .m-video > video {
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     left: 0;
     top: 0;
   }
@@ -124,7 +125,8 @@
   .a1-con figure > img {
     width: 352px;
     height: 200px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 18px 18px 0 0;
     overflow: hidden;
   }
@@ -182,7 +184,8 @@
     position: relative;
   }
   .games > figure > video {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 30px;
     position: relative;
   }
@@ -235,12 +238,15 @@
   .studios {
     width: 800px;
     margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     gap: 30px;
   }
   .studios .studios-a {
     width: 100%;
     flex-grow: 1;
-    height: 350px;
     border-radius: 20px;
     text-align: center;
   }
@@ -261,7 +267,8 @@
   .studios-it > img {
     width: 150px;
     height: 150px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     margin: 0;
   }
   .studios-it > img:nth-of-type(2) {
@@ -397,34 +404,38 @@
   }
   .m-video {
     width: 100%;
+    position: absolute;
     z-index: -1;
   }
   .m-video > video {
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     left: 0;
     top: 0;
   }
-  .m-video > p {
-    position: absolute;
-    top: 500px;
-    left: 50%;
-    width: 700px;
-    transform: translateX(-82%);
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    flex-direction: column;
+  .brave {
+    margin: 0 auto;
+    width: 500px;
+    height: 850px;
+    padding: 500px 0 100px 0;
+    line-height: 0.5;
+  }
+  .brave > p:nth-of-type(1) {
     line-height: 1;
     font-family: "acumin-pro-condensed";
     font-weight: 900;
     font-size: 100px;
-    color: white;
-    text-shadow: 3px 3px 0px #fe5e00;
     font-style: italic;
+    text-shadow: 3px 3px 0px #fe5e00;
+    color: white;
   }
-  .m-video > p > span {
-    text-shadow: none;
+  .brave > p:nth-of-type(2) {
+    line-height: 1;
+    font-family: "acumin-pro-condensed";
+    font-weight: 900;
+    font-size: 100px;
+    font-style: italic;
     color: #fe5e00;
   }
   .top {
@@ -492,7 +503,8 @@
   .a1-con figure > img {
     width: 352px;
     height: 200px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 18px 18px 0 0;
     overflow: hidden;
   }
@@ -550,7 +562,8 @@
     position: relative;
   }
   .games > figure > video {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 30px;
     position: relative;
   }
@@ -606,6 +619,7 @@
   }
   .studios .studios-a {
     width: 100%;
+    height: 1000px;
     height: 350px;
     border-radius: 20px;
     text-align: center;
@@ -627,20 +641,23 @@
   .studios-it > img {
     width: 150px;
     height: 150px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     margin: 0;
   }
   .studios-it > img:nth-of-type(2) {
     width: 300px;
   }
   .st-fc > b {
-    padding: 20px;
-    font-size: 20px;
+    padding-top: 20px;
+    font-size: 25px;
   }
   .st-fc > p {
-    padding: 0 20px;
-    font-size: 15px;
+    padding: 0 0 150px 0;
+    font-size: 20px;
     line-height: 1.5;
+    width: 70%;
+    margin: 0 auto;
   }
   .text-white {
     color: white;
@@ -706,7 +723,7 @@
   }
   .banner {
     width: 500px;
-    height: 60vw;
+    height: 140vw;
     margin: 100px auto;
     background-color: #f8e8da;
     border-radius: 10px;
@@ -717,11 +734,23 @@
     flex-direction: column;
   }
   .banner .banner-col {
-    padding: 50px 60px;
+    width: 100%;
+    padding: 60px 30px;
+  }
+  .banner .banner-col > p {
+    width: 80%;
+    font-weight: 500;
+    font-size: 25px;
+  }
+  .banner > img {
+    position: absolute;
+    top: 55%;
+    right: 0%;
   }
   .b-title {
+    width: 80%;
     font-weight: 900;
-    font-size: 60px;
+    font-size: 80px;
     margin: 0 0 30px 0;
     line-height: 0.9;
   }

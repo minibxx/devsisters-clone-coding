@@ -219,12 +219,11 @@
     .studios {
       width: $wid;
       margin: 50px auto;
-      // @include flex (space-between, center){flex-direction: row;}
+      @include flex (space-between, center){flex-direction: row;}
       gap: 30px;
       .studios-a{
         width: 100%;
         flex-grow: 1;
-        height: 350px;
         border-radius: 20px;
         text-align: center;
         &:nth-of-type(1){background-color: #ffe7c4;}
@@ -377,6 +376,7 @@
   @import "_mixin";
 
   $wid : 500px; 
+
   p {white-space: pre-line;}
   a {text-decoration: none; color:#000;}
   *{box-sizing: border-box}
@@ -396,7 +396,7 @@
   
   .m-video {
       width: 100%;
-      // position: absolute;
+      position: absolute;
       z-index: -1;
       > video {
         width: 100%;
@@ -404,28 +404,32 @@
         left: 0;
         top: 0;
       }
-      >p { 
-        position: absolute;
-        top : 500px;
-        left: 50%;
-        width: 700px;
-        transform: translateX(-82%);
-        @include flex(space-between,start ){flex-direction: column};
-        line-height: 1;
-        font-family: 'acumin-pro-condensed';
-        @include font(900, 100px);
-        color: white;
-        text-shadow: 3px 3px 0px #fe5e00;
-        font-style: italic;
-        
-      > span {
-         text-shadow: none;
-         color: #fe5e00;
-       }
-     }
     }
     
-  
+    
+    .brave {
+      margin: 0 auto;
+      width: $wid;
+      height: 850px;
+      padding: 500px 0 100px 0;
+      line-height: 0.5;
+          >p:nth-of-type(1){ 
+              line-height: 1;
+              font-family: 'acumin-pro-condensed';
+              @include font(900, 100px);
+              font-style: italic;
+              text-shadow: 3px 3px 0px #fe5e00;
+              color: white;
+          }
+          >p:nth-of-type(2) {
+              line-height: 1;
+              font-family: 'acumin-pro-condensed';
+              @include font(900, 100px);
+              font-style: italic;
+              color: #fe5e00;
+          }
+      }
+
   
   
   .top {
@@ -587,10 +591,12 @@
   .studios {
     width: $wid;
     margin: 50px auto;
+    
     @include flex (space-between, center){flex-direction: column;}
     // gap: 30px;
     .studios-a{
       width: 100%;
+      height: 1000px;
       // flex-grow: 1;
       height: 350px;
       border-radius: 20px;
@@ -622,8 +628,8 @@
   }
   
   .st-fc{
-    >b {padding: 20px; font-size: 20px;}
-    >p {padding: 0 20px; font-size: 15px; line-height: 1.5}
+    >b {padding-top: 20px; font-size: 25px;}
+    >p {padding:0 0 150px 0; font-size: 20px; line-height: 1.5; width: 70%; margin: 0 auto;}
   }
   .text-white{color: white;}
     .line-brown{
@@ -680,20 +686,30 @@
   
    .banner{
     width: $wid;
-    height: 60vw;
+    height: 140vw;
     margin: 100px auto;
     background-color: #f8e8da;
     border-radius: 10px;
     position: relative;
     @include flex(space-between, center){flex-direction: column};
     .banner-col{
-      padding: 50px 60px;
+      width: 100%;
+      padding: 60px 30px ;
+      >p{
+        width: 80%;
+        @include font(500, 25px);
+      }
     }
-  
+    >img{
+      position: absolute;
+      top : 55%;
+      right: 0%
+    }
    }
   
    .b-title{
-    @include font(900, 60px);
+    width: 80%;
+    @include font(900, 80px);
     margin: 0 0 30px 0; 
     line-height: 0.9;
    }
