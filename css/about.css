@@ -176,15 +176,15 @@ footer .ft-sns > ul {
     position: fixed;
     left: 0;
     top: 0;
-    width: 800px;
+    width: 100%;
     z-index: 9999;
   }
   header .nav-b {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     padding: 20px 0;
   }
   header .nav-b > a {
@@ -205,7 +205,7 @@ footer .ft-sns > ul {
   }
   header .nav-b > ul > li {
     list-style-type: none;
-    padding-left: 10px;
+    padding: 0 2vw;
     color: white;
   }
   header .nav-b > ul > li > a {
@@ -229,7 +229,7 @@ footer .ft-sns > ul {
     padding: 100px 0 80px 0;
   }
   footer .ft-top {
-    width: 800px;
+    width: 100%;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
@@ -273,7 +273,7 @@ footer .ft-sns > ul {
     margin-left: 5px;
   }
   footer .ft-logo {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
   }
   footer .ft-logo > svg {
@@ -281,14 +281,14 @@ footer .ft-sns > ul {
     padding: 120px 0 20px 0;
   }
   footer .ft-last {
-    width: 800px;
+    width: 100%;
     margin: 0px auto;
   }
   footer .ft-sns {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 800px;
+    width: 100%;
     margin: 10px auto;
   }
   footer .ft-sns > ul {
@@ -310,7 +310,7 @@ footer .ft-sns > ul {
     z-index: 9999;
   }
   header .nav-b {
-    width: 500px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -360,7 +360,7 @@ footer .ft-sns > ul {
     padding: 100px 0 80px 0;
   }
   footer .ft-top {
-    width: 500px;
+    width: 100%;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
@@ -394,17 +394,15 @@ footer .ft-sns > ul {
     margin: 0 0 0 5px;
   }
   footer .ft-list {
+    width: 80%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 400;
-    font-size: 10px;
-    gap: 20px;
+    flex-wrap: wrap;
   }
   footer .ft-list > li {
-    margin: 10px 0;
     font-weight: 400;
     font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
   }
   footer .ft-list > li::after {
     content: "arrow_outward";
@@ -414,7 +412,7 @@ footer .ft-sns > ul {
     margin-left: 5px;
   }
   footer .ft-logo {
-    width: 500px;
+    width: 100%;
     margin: 0 auto;
   }
   footer .ft-logo > svg {
@@ -422,14 +420,14 @@ footer .ft-sns > ul {
     padding: 120px 0 20px 0;
   }
   footer .ft-last {
-    width: 500px;
+    width: 100%;
     margin: 0px auto;
   }
   footer .ft-sns {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 500px;
+    width: 100%;
     margin: 10px auto;
   }
   footer .ft-sns > ul {
@@ -863,15 +861,15 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    width: 800px;
+    width: 100%;
     z-index: 9999;
   }
   header .nav-b {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     padding: 20px 0;
   }
   header .nav-b > a {
@@ -892,7 +890,7 @@ body {
   }
   header .nav-b > ul > li {
     list-style-type: none;
-    padding-left: 10px;
+    padding: 0 2vw;
     color: white;
   }
   header .nav-b > ul > li > a {
@@ -916,7 +914,7 @@ body {
     padding: 100px 0 80px 0;
   }
   footer .ft-top {
-    width: 800px;
+    width: 100%;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
@@ -960,7 +958,7 @@ body {
     margin-left: 5px;
   }
   footer .ft-logo {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
   }
   footer .ft-logo > svg {
@@ -968,14 +966,14 @@ body {
     padding: 120px 0 20px 0;
   }
   footer .ft-last {
-    width: 800px;
+    width: 100%;
     margin: 0px auto;
   }
   footer .ft-sns {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 800px;
+    width: 100%;
     margin: 10px auto;
   }
   footer .ft-sns > ul {
@@ -997,7 +995,7 @@ body {
     z-index: 9999;
   }
   header .nav-b {
-    width: 500px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1047,7 +1045,7 @@ body {
     padding: 100px 0 80px 0;
   }
   footer .ft-top {
-    width: 500px;
+    width: 100%;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
@@ -1081,17 +1079,15 @@ body {
     margin: 0 0 0 5px;
   }
   footer .ft-list {
+    width: 80%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 400;
-    font-size: 10px;
-    gap: 20px;
+    flex-wrap: wrap;
   }
   footer .ft-list > li {
-    margin: 10px 0;
     font-weight: 400;
     font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
   }
   footer .ft-list > li::after {
     content: "arrow_outward";
@@ -1101,7 +1097,7 @@ body {
     margin-left: 5px;
   }
   footer .ft-logo {
-    width: 500px;
+    width: 100%;
     margin: 0 auto;
   }
   footer .ft-logo > svg {
@@ -1109,14 +1105,14 @@ body {
     padding: 120px 0 20px 0;
   }
   footer .ft-last {
-    width: 500px;
+    width: 100%;
     margin: 0px auto;
   }
   footer .ft-sns {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 500px;
+    width: 100%;
     margin: 10px auto;
   }
   footer .ft-sns > ul {
@@ -1576,15 +1572,15 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    width: 800px;
+    width: 100%;
     z-index: 9999;
   }
   header .nav-b {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     padding: 20px 0;
   }
   header .nav-b > a {
@@ -1605,7 +1601,7 @@ body {
   }
   header .nav-b > ul > li {
     list-style-type: none;
-    padding-left: 10px;
+    padding: 0 2vw;
     color: white;
   }
   header .nav-b > ul > li > a {
@@ -1629,7 +1625,7 @@ body {
     padding: 100px 0 80px 0;
   }
   footer .ft-top {
-    width: 800px;
+    width: 100%;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
@@ -1673,7 +1669,7 @@ body {
     margin-left: 5px;
   }
   footer .ft-logo {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
   }
   footer .ft-logo > svg {
@@ -1681,14 +1677,14 @@ body {
     padding: 120px 0 20px 0;
   }
   footer .ft-last {
-    width: 800px;
+    width: 100%;
     margin: 0px auto;
   }
   footer .ft-sns {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 800px;
+    width: 100%;
     margin: 10px auto;
   }
   footer .ft-sns > ul {
@@ -1710,7 +1706,7 @@ body {
     z-index: 9999;
   }
   header .nav-b {
-    width: 500px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1760,7 +1756,7 @@ body {
     padding: 100px 0 80px 0;
   }
   footer .ft-top {
-    width: 500px;
+    width: 100%;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
@@ -1794,17 +1790,15 @@ body {
     margin: 0 0 0 5px;
   }
   footer .ft-list {
+    width: 80%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 400;
-    font-size: 10px;
-    gap: 20px;
+    flex-wrap: wrap;
   }
   footer .ft-list > li {
-    margin: 10px 0;
     font-weight: 400;
     font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
   }
   footer .ft-list > li::after {
     content: "arrow_outward";
@@ -1814,7 +1808,7 @@ body {
     margin-left: 5px;
   }
   footer .ft-logo {
-    width: 500px;
+    width: 100%;
     margin: 0 auto;
   }
   footer .ft-logo > svg {
@@ -1822,14 +1816,14 @@ body {
     padding: 120px 0 20px 0;
   }
   footer .ft-last {
-    width: 500px;
+    width: 100%;
     margin: 0px auto;
   }
   footer .ft-sns {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 500px;
+    width: 100%;
     margin: 10px auto;
   }
   footer .ft-sns > ul {
@@ -1850,7 +1844,7 @@ body {
   .font-title {
     font-family: "acumin-pro-condensed";
     font-weight: 900;
-    font-size: 90px;
+    font-size: 70px;
     font-style: italic;
     color: #fe5e00;
     width: 500px;

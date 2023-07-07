@@ -176,15 +176,15 @@ footer .ft-sns > ul {
     position: fixed;
     left: 0;
     top: 0;
-    width: 800px;
+    width: 100%;
     z-index: 9999;
   }
   header .nav-b {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     padding: 20px 0;
   }
   header .nav-b > a {
@@ -205,7 +205,7 @@ footer .ft-sns > ul {
   }
   header .nav-b > ul > li {
     list-style-type: none;
-    padding-left: 10px;
+    padding: 0 2vw;
     color: white;
   }
   header .nav-b > ul > li > a {
@@ -229,7 +229,7 @@ footer .ft-sns > ul {
     padding: 100px 0 80px 0;
   }
   footer .ft-top {
-    width: 800px;
+    width: 100%;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
@@ -273,7 +273,7 @@ footer .ft-sns > ul {
     margin-left: 5px;
   }
   footer .ft-logo {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
   }
   footer .ft-logo > svg {
@@ -281,14 +281,14 @@ footer .ft-sns > ul {
     padding: 120px 0 20px 0;
   }
   footer .ft-last {
-    width: 800px;
+    width: 100%;
     margin: 0px auto;
   }
   footer .ft-sns {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 800px;
+    width: 100%;
     margin: 10px auto;
   }
   footer .ft-sns > ul {
@@ -310,7 +310,7 @@ footer .ft-sns > ul {
     z-index: 9999;
   }
   header .nav-b {
-    width: 500px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -360,7 +360,7 @@ footer .ft-sns > ul {
     padding: 100px 0 80px 0;
   }
   footer .ft-top {
-    width: 500px;
+    width: 100%;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
@@ -394,17 +394,15 @@ footer .ft-sns > ul {
     margin: 0 0 0 5px;
   }
   footer .ft-list {
+    width: 80%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 400;
-    font-size: 10px;
-    gap: 20px;
+    flex-wrap: wrap;
   }
   footer .ft-list > li {
-    margin: 10px 0;
     font-weight: 400;
     font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
   }
   footer .ft-list > li::after {
     content: "arrow_outward";
@@ -414,7 +412,7 @@ footer .ft-sns > ul {
     margin-left: 5px;
   }
   footer .ft-logo {
-    width: 500px;
+    width: 100%;
     margin: 0 auto;
   }
   footer .ft-logo > svg {
@@ -422,14 +420,14 @@ footer .ft-sns > ul {
     padding: 120px 0 20px 0;
   }
   footer .ft-last {
-    width: 500px;
+    width: 100%;
     margin: 0px auto;
   }
   footer .ft-sns {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 500px;
+    width: 100%;
     margin: 10px auto;
   }
   footer .ft-sns > ul {
@@ -952,15 +950,15 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    width: 800px;
+    width: 100%;
     z-index: 9999;
   }
   header .nav-b {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     padding: 20px 0;
   }
   header .nav-b > a {
@@ -981,7 +979,7 @@ body {
   }
   header .nav-b > ul > li {
     list-style-type: none;
-    padding-left: 10px;
+    padding: 0 2vw;
     color: white;
   }
   header .nav-b > ul > li > a {
@@ -1005,7 +1003,7 @@ body {
     padding: 100px 0 80px 0;
   }
   footer .ft-top {
-    width: 800px;
+    width: 100%;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
@@ -1049,7 +1047,7 @@ body {
     margin-left: 5px;
   }
   footer .ft-logo {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
   }
   footer .ft-logo > svg {
@@ -1057,14 +1055,14 @@ body {
     padding: 120px 0 20px 0;
   }
   footer .ft-last {
-    width: 800px;
+    width: 100%;
     margin: 0px auto;
   }
   footer .ft-sns {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 800px;
+    width: 100%;
     margin: 10px auto;
   }
   footer .ft-sns > ul {
@@ -1086,7 +1084,7 @@ body {
     z-index: 9999;
   }
   header .nav-b {
-    width: 500px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1136,7 +1134,7 @@ body {
     padding: 100px 0 80px 0;
   }
   footer .ft-top {
-    width: 500px;
+    width: 100%;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
@@ -1170,17 +1168,15 @@ body {
     margin: 0 0 0 5px;
   }
   footer .ft-list {
+    width: 80%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 400;
-    font-size: 10px;
-    gap: 20px;
+    flex-wrap: wrap;
   }
   footer .ft-list > li {
-    margin: 10px 0;
     font-weight: 400;
     font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
   }
   footer .ft-list > li::after {
     content: "arrow_outward";
@@ -1190,7 +1186,7 @@ body {
     margin-left: 5px;
   }
   footer .ft-logo {
-    width: 500px;
+    width: 100%;
     margin: 0 auto;
   }
   footer .ft-logo > svg {
@@ -1198,14 +1194,14 @@ body {
     padding: 120px 0 20px 0;
   }
   footer .ft-last {
-    width: 500px;
+    width: 100%;
     margin: 0px auto;
   }
   footer .ft-sns {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 500px;
+    width: 100%;
     margin: 10px auto;
   }
   footer .ft-sns > ul {
@@ -1275,7 +1271,7 @@ body {
     flex-direction: column;
   }
   .brave > div > img {
-    width: 80%;
+    width: 60%;
     margin: 30px 0;
   }
   .brave > div > a {
@@ -1283,8 +1279,8 @@ body {
     border: 3px solid white;
     border-radius: 50px;
     padding: 15px 20px;
-    font-weight: 800;
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 20px;
   }
   .brave > div > a::after {
     content: "arrow_outward";
@@ -1300,14 +1296,14 @@ body {
     margin: 100px auto;
   }
   .break .b-title {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
   }
   .break .b-title > img {
-    width: 25%;
+    width: 30%;
   }
 }
 @media screen and (min-width: 721px) and (max-width: 1020px) {
@@ -1365,16 +1361,17 @@ body {
 }
 @media screen and (min-width: 721px) and (max-width: 1020px) {
   .store-ic a {
-    margin: 0 5px;
+    margin: 0 3px;
     background-color: #000;
     color: white;
     border-radius: 30px;
-    padding: 10px 15px;
+    padding: 6px 10px;
+    vertical-align: middle;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 10px;
   }
   .store-ic a > span {
-    padding: 0 10px;
+    padding: 0 7px;
   }
 }
 @media screen and (min-width: 721px) and (max-width: 1020px) {
@@ -1407,10 +1404,11 @@ body {
   .full-img {
     width: 100%;
     position: relative;
+    margin-top: 50px;
   }
   .full-img > img {
+    margin-top: 300px;
     width: 100%;
-    margin-top: 50px;
   }
 }
 @media screen and (min-width: 721px) and (max-width: 1020px) {
@@ -1759,15 +1757,15 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    width: 800px;
+    width: 100%;
     z-index: 9999;
   }
   header .nav-b {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     padding: 20px 0;
   }
   header .nav-b > a {
@@ -1788,7 +1786,7 @@ body {
   }
   header .nav-b > ul > li {
     list-style-type: none;
-    padding-left: 10px;
+    padding: 0 2vw;
     color: white;
   }
   header .nav-b > ul > li > a {
@@ -1812,7 +1810,7 @@ body {
     padding: 100px 0 80px 0;
   }
   footer .ft-top {
-    width: 800px;
+    width: 100%;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
@@ -1856,7 +1854,7 @@ body {
     margin-left: 5px;
   }
   footer .ft-logo {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
   }
   footer .ft-logo > svg {
@@ -1864,14 +1862,14 @@ body {
     padding: 120px 0 20px 0;
   }
   footer .ft-last {
-    width: 800px;
+    width: 100%;
     margin: 0px auto;
   }
   footer .ft-sns {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 800px;
+    width: 100%;
     margin: 10px auto;
   }
   footer .ft-sns > ul {
@@ -1893,7 +1891,7 @@ body {
     z-index: 9999;
   }
   header .nav-b {
-    width: 500px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1943,7 +1941,7 @@ body {
     padding: 100px 0 80px 0;
   }
   footer .ft-top {
-    width: 500px;
+    width: 100%;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
@@ -1977,17 +1975,15 @@ body {
     margin: 0 0 0 5px;
   }
   footer .ft-list {
+    width: 80%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 400;
-    font-size: 10px;
-    gap: 20px;
+    flex-wrap: wrap;
   }
   footer .ft-list > li {
-    margin: 10px 0;
     font-weight: 400;
     font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
   }
   footer .ft-list > li::after {
     content: "arrow_outward";
@@ -1997,7 +1993,7 @@ body {
     margin-left: 5px;
   }
   footer .ft-logo {
-    width: 500px;
+    width: 100%;
     margin: 0 auto;
   }
   footer .ft-logo > svg {
@@ -2005,14 +2001,14 @@ body {
     padding: 120px 0 20px 0;
   }
   footer .ft-last {
-    width: 500px;
+    width: 100%;
     margin: 0px auto;
   }
   footer .ft-sns {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 500px;
+    width: 100%;
     margin: 10px auto;
   }
   footer .ft-sns > ul {
@@ -2123,31 +2119,39 @@ body {
     margin: 0 auto;
   }
   .break .b-title > img {
-    width: 25%;
+    width: 40%;
   }
 }
 @media screen and (max-width: 720px) {
   .b-text {
-    text-align: center;
-    height: 230px;
+    width: 100%;
+    height: 300px;
     margin: 0 30px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     text-align: center;
   }
   .b-text > div:nth-of-type(2) {
     color: #fe5e00;
     font-weight: 600;
+    font-size: 30px;
+  }
+  .b-text > div:nth-of-type(3) {
+    font-weight: 400;
     font-size: 25px;
+    margin: 20px 0;
   }
 }
 @media screen and (max-width: 720px) {
   .king-title {
+    width: 100%;
+    margin-top: 30px;
     font-weight: 900;
     font-size: 50px;
     color: #fe5e00;
+    text-align: center;
   }
 }
 @media screen and (max-width: 720px) {
@@ -2183,12 +2187,11 @@ body {
 }
 @media screen and (max-width: 720px) {
   .store-ic a {
-    width: 50%;
-    margin: 0 5px;
+    margin: 10px 5px;
     background-color: #000;
     color: white;
     border-radius: 30px;
-    padding: 10px 15px;
+    padding: 5px 5px;
     font-weight: 500;
     font-size: 12px;
   }
@@ -2213,7 +2216,7 @@ body {
   }
   .break2 > div:nth-of-type(2) {
     font-weight: 400;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1.5;
     margin: 0 0 100px 0;
   }
@@ -2232,21 +2235,23 @@ body {
   }
   .full-img > img {
     width: 100%;
-    margin-top: 150px;
+    margin-top: 500px;
   }
 }
 @media screen and (max-width: 720px) {
   .story-float {
+    width: 600px;
     position: absolute;
     top: 5%;
     left: 50%;
     transform: translateX(-50%);
-    text-align: center;
   }
   .story-float > p {
+    text-align: center;
     width: 100%;
+    margin: 0 auto;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1.5;
     margin: 10px 0;
   }
@@ -2318,7 +2323,8 @@ body {
   }
 }
 @media screen and (max-width: 720px) {
-  .t-center {
+  .t-centers {
+    width: 100%;
     text-align: center;
   }
 }

@@ -3,7 +3,7 @@
 
   * { box-sizing: border-box; }
 
-  $wid : 800px;
+  $wid : 100%;
 
 
   header {
@@ -12,13 +12,11 @@
     top: 0;
     width: $wid;
     z-index: 9999;
-
+    
     .nav-b {
-      width: 100%;
-
-      @include flex(space-between, center) {}
-
+      width: 90%;
       margin: 0 auto;
+      @include flex(space-between, center) {}
       padding: 20px 0;
 
       >a {
@@ -38,7 +36,7 @@
 
         >li {
           list-style-type: none;
-          padding-left: 10px;
+          padding:0 2vw;
           color: white;
 
           >a {
@@ -186,7 +184,7 @@
     box-sizing: border-box;
   }
 
-  $wid : 500px;
+  $wid : 100%;
 
 
   header {
@@ -286,14 +284,14 @@
     }
 
     .ft-list {
-      @include flex(space-between, center) {}
-
-      @include font(400, 10px);
-      gap: 20px;
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
 
       >li {
-        margin: 10px 0;
         @include font(400, 20px);
+        line-height: 1.5;
+        margin: 0;
 
         &::after {
           content: 'arrow_outward';
@@ -306,6 +304,7 @@
       }
     }
 
+     
 
     .ft-logo {
       width: $wid;

@@ -230,7 +230,7 @@
     
     .font-title {
         font-family: 'acumin-pro-condensed';
-        @include font(900, 90px);
+        @include font(900, 70px);
         font-style: italic;
         color: #fe5e00;
         width: $wid;
