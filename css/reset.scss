@@ -143,21 +143,25 @@ footer {
     }
 
     .ft-list {
-        @include flex(space-between, center) {
-            gap: 25px;
-        }
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px;
+        flex : block;
 
         >li {
-            margin: 10px 0;
-
-            &::after {
-                content: 'arrow_outward';
-                font-family: 'Material Symbols Outlined';
-                vertical-align: middle;
-                font-size: 10px;
-                margin-left: 5px;
-            }
-
+            padding-right: 10px;
+            @include font(400, 20px);
+            line-height: 1.5;
+            margin: 0;
+          }
+        }
+        .ft-arrow::after {
+          content: 'arrow_outward';
+          font-family: 'Material Symbols Outlined';
+          vertical-align: middle;
+          font-size: 18px;
+          margin-left: 5px;
         }
     }
 
@@ -194,6 +198,6 @@ footer {
         }
     }
 
-}
+
 
 @import "m_reset";
