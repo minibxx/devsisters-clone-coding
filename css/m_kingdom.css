@@ -119,41 +119,46 @@
     margin: 0 0 0 5px;
   }
   footer .ft-list {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 25px;
+    flex-wrap: wrap;
+    gap: 0px;
+    flex: block;
   }
   footer .ft-list > li {
-    margin: 10px 0;
+    padding-right: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
   }
-  footer .ft-list > li::after {
+  footer .ft-arrow::after {
     content: "arrow_outward";
     font-family: "Material Symbols Outlined";
     vertical-align: middle;
-    font-size: 10px;
+    font-size: 18px;
     margin-left: 5px;
   }
-  footer .ft-logo {
+  .ft-logo {
     width: 1280px;
     margin: 0 auto;
   }
-  footer .ft-logo > svg {
+  .ft-logo > svg {
     width: 80%;
     padding: 120px 0 20px 0;
   }
-  footer .ft-last {
+  .ft-last {
     width: 1280px;
     margin: 0px auto;
   }
-  footer .ft-sns {
+  .ft-sns {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 1280px;
     margin: 10px auto;
   }
-  footer .ft-sns > ul {
+  .ft-sns > ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -218,7 +223,8 @@
   }
   footer .ft {
     color: white;
-    padding: 100px 0 80px 0;
+    width: 90%;
+    margin: 0 auto;
   }
   footer .ft-top {
     width: 100%;
@@ -249,19 +255,24 @@
     margin: 0 0 0 5px;
   }
   footer .ft-list {
+    width: 80%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 25px;
+    flex-wrap: wrap;
+    gap: 0;
+    flex: block;
   }
   footer .ft-list > li {
-    margin: 10px 0;
+    padding-right: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
   }
-  footer .ft-list > li::after {
+  footer .ft-list .ft-arrow::after {
     content: "arrow_outward";
     font-family: "Material Symbols Outlined";
     vertical-align: middle;
-    font-size: 10px;
+    font-size: 18px;
     margin-left: 5px;
   }
   footer .ft-logo {
@@ -349,7 +360,8 @@
   }
   footer .ft {
     color: white;
-    padding: 100px 0 80px 0;
+    width: 90%;
+    margin: 0 auto;
   }
   footer .ft-top {
     width: 100%;
@@ -389,14 +401,17 @@
     width: 80%;
     display: flex;
     flex-wrap: wrap;
+    gap: 0;
+    flex: block;
   }
   footer .ft-list > li {
+    padding-right: 10px;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.5;
     margin: 0;
   }
-  footer .ft-list > li::after {
+  footer .ft-arrow::after {
     content: "arrow_outward";
     font-family: "Material Symbols Outlined";
     vertical-align: middle;
@@ -926,41 +941,46 @@
     margin: 0 0 0 5px;
   }
   footer .ft-list {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 25px;
+    flex-wrap: wrap;
+    gap: 0px;
+    flex: block;
   }
   footer .ft-list > li {
-    margin: 10px 0;
+    padding-right: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
   }
-  footer .ft-list > li::after {
+  footer .ft-arrow::after {
     content: "arrow_outward";
     font-family: "Material Symbols Outlined";
     vertical-align: middle;
-    font-size: 10px;
+    font-size: 18px;
     margin-left: 5px;
   }
-  footer .ft-logo {
+  .ft-logo {
     width: 1280px;
     margin: 0 auto;
   }
-  footer .ft-logo > svg {
+  .ft-logo > svg {
     width: 80%;
     padding: 120px 0 20px 0;
   }
-  footer .ft-last {
+  .ft-last {
     width: 1280px;
     margin: 0px auto;
   }
-  footer .ft-sns {
+  .ft-sns {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 1280px;
     margin: 10px auto;
   }
-  footer .ft-sns > ul {
+  .ft-sns > ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1025,7 +1045,8 @@
   }
   footer .ft {
     color: white;
-    padding: 100px 0 80px 0;
+    width: 90%;
+    margin: 0 auto;
   }
   footer .ft-top {
     width: 100%;
@@ -1056,19 +1077,24 @@
     margin: 0 0 0 5px;
   }
   footer .ft-list {
+    width: 80%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 25px;
+    flex-wrap: wrap;
+    gap: 0;
+    flex: block;
   }
   footer .ft-list > li {
-    margin: 10px 0;
+    padding-right: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
   }
-  footer .ft-list > li::after {
+  footer .ft-list .ft-arrow::after {
     content: "arrow_outward";
     font-family: "Material Symbols Outlined";
     vertical-align: middle;
-    font-size: 10px;
+    font-size: 18px;
     margin-left: 5px;
   }
   footer .ft-logo {
@@ -1156,7 +1182,8 @@
   }
   footer .ft {
     color: white;
-    padding: 100px 0 80px 0;
+    width: 90%;
+    margin: 0 auto;
   }
   footer .ft-top {
     width: 100%;
@@ -1196,14 +1223,17 @@
     width: 80%;
     display: flex;
     flex-wrap: wrap;
+    gap: 0;
+    flex: block;
   }
   footer .ft-list > li {
+    padding-right: 10px;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.5;
     margin: 0;
   }
-  footer .ft-list > li::after {
+  footer .ft-arrow::after {
     content: "arrow_outward";
     font-family: "Material Symbols Outlined";
     vertical-align: middle;
