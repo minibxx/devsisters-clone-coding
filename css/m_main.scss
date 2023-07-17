@@ -59,23 +59,23 @@
 
     .top {
         @include flex(space-between,center);
-        width: $wid;
+        width: $wid*0.95;
         margin: 0 auto 30px auto;
         >div {
             > p {
             @include flex(space-between,start){flex-direction: column};
-            @include font(600, 27px);
+            @include font(600, 20px);
             margin-top: 15px;
             width: 80%;
             word-break: keep-all;
             }
             > p:nth-of-type(2) {
               color: #fe5e00;
-              width: 60%;
+              width: 70%;
             }     
         }
         > img {
-          width: 50%;
+          width: 60%;
           animation: rhkdus 1s infinite alternate;
           transition: 0.5s;
           

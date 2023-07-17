@@ -65,7 +65,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 800px;
+    width: 760px;
     margin: 0 auto 30px auto;
   }
   .top > div > p {
@@ -74,17 +74,17 @@
     align-items: start;
     flex-direction: column;
     font-weight: 600;
-    font-size: 27px;
+    font-size: 20px;
     margin-top: 15px;
     width: 80%;
     word-break: keep-all;
   }
   .top > div > p:nth-of-type(2) {
     color: #fe5e00;
-    width: 60%;
+    width: 70%;
   }
   .top > img {
-    width: 50%;
+    width: 60%;
     animation: rhkdus 1s infinite alternate;
     transition: 0.5s;
   }
