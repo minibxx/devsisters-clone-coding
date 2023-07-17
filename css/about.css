@@ -52,6 +52,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 9999;
+  height: 60px;
 }
 header .nav-b {
   width: 1280px;
@@ -59,7 +60,7 @@ header .nav-b {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 12px 0;
 }
 header .nav-b > a {
   font-weight: 600;
@@ -88,6 +89,10 @@ header .nav-b > ul .list > a {
   color: white;
 }
 
+header.active {
+  background-color: #fe5e00;
+}
+
 .burger {
   transition: 0.5s;
   transform: translateX(110%);
@@ -107,6 +112,10 @@ header .nav-b > ul .list > a {
   transform: translateX(0);
 }
 
+.burger-ic {
+  padding-top: 5px;
+}
+
 .burger-top {
   display: flex;
   justify-content: space-between;
@@ -120,7 +129,7 @@ header .nav-b > ul .list > a {
 .burger-list {
   font-family: "acumin-pro-condensed";
   font-weight: 900;
-  font-size: 40px;
+  font-size: 30px;
   font-style: italic;
   display: flex;
   flex-direction: column;
@@ -276,23 +285,6 @@ footer .ft-arrow::after {
     padding-left: 10px;
     color: white;
   }
-  .burger {
-    transition: 0.5s;
-    transform: translateX(110%);
-  }
-  .burger.active {
-    width: 100%;
-    height: 100vw;
-    background-color: #fe5e00;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    padding: 20px 30px;
-    transform: translateX(0);
-  }
   footer {
     position: relative;
     margin-top: 120px;
@@ -429,23 +421,6 @@ footer .ft-arrow::after {
     list-style-type: none;
     padding-left: 10px;
     color: white;
-  }
-  .burger {
-    transition: 0.5s;
-    transform: translateX(110%);
-  }
-  .burger.active {
-    width: 100%;
-    height: 100vw;
-    background-color: #fe5e00;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    padding: 20px 30px;
-    transform: translateX(0);
   }
   footer {
     position: relative;
@@ -840,6 +815,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 9999;
+    height: 60px;
   }
   header .nav-b {
     width: 1280px;
@@ -847,7 +823,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 12px 0;
   }
   header .nav-b > a {
     font-weight: 600;
@@ -875,6 +851,9 @@ body {
     font-size: 14px;
     color: white;
   }
+  header.active {
+    background-color: #fe5e00;
+  }
   .burger {
     transition: 0.5s;
     transform: translateX(110%);
@@ -892,6 +871,9 @@ body {
     padding: 20px 30px;
     transform: translateX(0);
   }
+  .burger-ic {
+    padding-top: 5px;
+  }
   .burger-top {
     display: flex;
     justify-content: space-between;
@@ -904,7 +886,7 @@ body {
   .burger-list {
     font-family: "acumin-pro-condensed";
     font-weight: 900;
-    font-size: 40px;
+    font-size: 30px;
     font-style: italic;
     display: flex;
     flex-direction: column;
@@ -1056,23 +1038,6 @@ body {
     padding-left: 10px;
     color: white;
   }
-  .burger {
-    transition: 0.5s;
-    transform: translateX(110%);
-  }
-  .burger.active {
-    width: 100%;
-    height: 100vw;
-    background-color: #fe5e00;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    padding: 20px 30px;
-    transform: translateX(0);
-  }
   footer {
     position: relative;
     margin-top: 120px;
@@ -1209,23 +1174,6 @@ body {
     list-style-type: none;
     padding-left: 10px;
     color: white;
-  }
-  .burger {
-    transition: 0.5s;
-    transform: translateX(110%);
-  }
-  .burger.active {
-    width: 100%;
-    height: 100vw;
-    background-color: #fe5e00;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    padding: 20px 30px;
-    transform: translateX(0);
   }
   footer {
     position: relative;
@@ -1646,6 +1594,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 9999;
+    height: 60px;
   }
   header .nav-b {
     width: 1280px;
@@ -1653,7 +1602,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 12px 0;
   }
   header .nav-b > a {
     font-weight: 600;
@@ -1681,6 +1630,9 @@ body {
     font-size: 14px;
     color: white;
   }
+  header.active {
+    background-color: #fe5e00;
+  }
   .burger {
     transition: 0.5s;
     transform: translateX(110%);
@@ -1698,6 +1650,9 @@ body {
     padding: 20px 30px;
     transform: translateX(0);
   }
+  .burger-ic {
+    padding-top: 5px;
+  }
   .burger-top {
     display: flex;
     justify-content: space-between;
@@ -1710,7 +1665,7 @@ body {
   .burger-list {
     font-family: "acumin-pro-condensed";
     font-weight: 900;
-    font-size: 40px;
+    font-size: 30px;
     font-style: italic;
     display: flex;
     flex-direction: column;
@@ -1862,23 +1817,6 @@ body {
     padding-left: 10px;
     color: white;
   }
-  .burger {
-    transition: 0.5s;
-    transform: translateX(110%);
-  }
-  .burger.active {
-    width: 100%;
-    height: 100vw;
-    background-color: #fe5e00;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    padding: 20px 30px;
-    transform: translateX(0);
-  }
   footer {
     position: relative;
     margin-top: 120px;
@@ -2015,23 +1953,6 @@ body {
     list-style-type: none;
     padding-left: 10px;
     color: white;
-  }
-  .burger {
-    transition: 0.5s;
-    transform: translateX(110%);
-  }
-  .burger.active {
-    width: 100%;
-    height: 100vw;
-    background-color: #fe5e00;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    padding: 20px 30px;
-    transform: translateX(0);
   }
   footer {
     position: relative;

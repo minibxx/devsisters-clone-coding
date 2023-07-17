@@ -52,6 +52,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 9999;
+  height: 60px;
 }
 header .nav-b {
   width: 1280px;
@@ -59,7 +60,7 @@ header .nav-b {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 12px 0;
 }
 header .nav-b > a {
   font-weight: 600;
@@ -88,9 +89,13 @@ header .nav-b > ul .list > a {
   color: white;
 }
 
+header.active {
+  background-color: #fe5e00;
+}
+
 .burger {
   transition: 0.5s;
-  transform: translateX(100%);
+  transform: translateX(110%);
 }
 
 .burger.active {
@@ -107,6 +112,10 @@ header .nav-b > ul .list > a {
   transform: translateX(0);
 }
 
+.burger-ic {
+  padding-top: 5px;
+}
+
 .burger-top {
   display: flex;
   justify-content: space-between;
@@ -120,7 +129,7 @@ header .nav-b > ul .list > a {
 .burger-list {
   font-family: "acumin-pro-condensed";
   font-weight: 900;
-  font-size: 40px;
+  font-size: 30px;
   font-style: italic;
   display: flex;
   flex-direction: column;
@@ -743,6 +752,8 @@ body {
 }
 
 .feat {
+  width: 1280px;
+  margin: 0 auto;
   color: #fe5e00;
 }
 .feat > video {
@@ -895,6 +906,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 9999;
+    height: 60px;
   }
   header .nav-b {
     width: 1280px;
@@ -902,7 +914,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 12px 0;
   }
   header .nav-b > a {
     font-weight: 600;
@@ -930,9 +942,12 @@ body {
     font-size: 14px;
     color: white;
   }
+  header.active {
+    background-color: #fe5e00;
+  }
   .burger {
     transition: 0.5s;
-    transform: translateX(100%);
+    transform: translateX(110%);
   }
   .burger.active {
     width: 100%;
@@ -947,6 +962,9 @@ body {
     padding: 20px 30px;
     transform: translateX(0);
   }
+  .burger-ic {
+    padding-top: 5px;
+  }
   .burger-top {
     display: flex;
     justify-content: space-between;
@@ -959,7 +977,7 @@ body {
   .burger-list {
     font-family: "acumin-pro-condensed";
     font-weight: 900;
-    font-size: 40px;
+    font-size: 30px;
     font-style: italic;
     display: flex;
     flex-direction: column;
@@ -1600,6 +1618,8 @@ body {
 }
 @media screen and (min-width: 721px) and (max-width: 1020px) {
   .feat {
+    width: 800px;
+    margin: 0 auto;
     color: #fe5e00;
   }
   .feat > video {
@@ -1763,6 +1783,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 9999;
+    height: 60px;
   }
   header .nav-b {
     width: 1280px;
@@ -1770,7 +1791,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 12px 0;
   }
   header .nav-b > a {
     font-weight: 600;
@@ -1798,9 +1819,12 @@ body {
     font-size: 14px;
     color: white;
   }
+  header.active {
+    background-color: #fe5e00;
+  }
   .burger {
     transition: 0.5s;
-    transform: translateX(100%);
+    transform: translateX(110%);
   }
   .burger.active {
     width: 100%;
@@ -1815,6 +1839,9 @@ body {
     padding: 20px 30px;
     transform: translateX(0);
   }
+  .burger-ic {
+    padding-top: 5px;
+  }
   .burger-top {
     display: flex;
     justify-content: space-between;
@@ -1827,7 +1854,7 @@ body {
   .burger-list {
     font-family: "acumin-pro-condensed";
     font-weight: 900;
-    font-size: 40px;
+    font-size: 30px;
     font-style: italic;
     display: flex;
     flex-direction: column;
@@ -2491,6 +2518,8 @@ body {
 }
 @media screen and (max-width: 720px) {
   .feat {
+    width: 600px;
+    margin: 0 auto;
     color: #fe5e00;
   }
   .feat > video {

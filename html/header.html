@@ -27,12 +27,28 @@
     const elBurgers = document.querySelector('.burger');
     const elClose = document.querySelector('.close');
     
+    elBurger.onclick = function(){
+        elBurgers.classList.add('active');
+    }
+    
+    elClose.onclick = function(){
+        elBurgers.classList.remove('active');
+    }
+    
+    let pos = {y:0,y2:0,status:true};
+    const elBg = document.querySelector('header');
+        
+    window.addEventListener('scroll',function(){
+    pos.y = window.pageYOffset;
 
-        elBurger.onclick = function(){
-            elBurgers.classList.add('active');
-        }
+    pos.status = (pos.y > pos.y2) ? true : false;
+    pos.y2 = pos.y;
 
-        elClose.onclick = function(){
-            elBurgers.classList.remove('active');
-        }
+    if(pos.status){ 
+        elBg.classList.add('active')
+    }
+    else{ 
+        elBg.classList.add('active')
+    }
+})
 </script>

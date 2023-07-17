@@ -199,6 +199,8 @@ body {position: relative;}
 }
 
 .feat{
+  width: $wid;
+  margin: 0 auto;
   color: #fe5e00;
   >video{border-radius: 10px;}
 }

@@ -61,6 +61,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 9999;
+    height: 60px;
 
     .nav-b {
         width: $wid;
@@ -68,7 +69,7 @@ header {
         @include flex(space-between, center) {}
 
         margin: 0 auto;
-        padding: 20px 0;
+        padding: 12px 0;
 
         >a {
             @include font(600, 25px);
@@ -98,6 +99,10 @@ header {
         }
     }
 }
+header.active{
+    background-color: #fe5e00;
+}
+
 
 .burger{
     transition: .5s;
@@ -116,7 +121,9 @@ header {
     padding: 20px 30px;
     transform: translateX(0);
 }
-
+.burger-ic {
+    padding-top: 5px;
+}
 .burger-top{
     display: flex;
     justify-content: space-between ;
@@ -127,7 +134,7 @@ header {
 }
 .burger-list{
     font-family: 'acumin-pro-condensed';
-    @include font(900, 40px);
+    @include font(900, 30px);
     font-style: italic;
     display: flex;
     flex-direction: column;
