@@ -80,6 +80,44 @@
     font-size: 14px;
     color: white;
   }
+  .burger {
+    transition: 0.5s;
+    transform: translateX(110%);
+  }
+  .burger.active {
+    width: 100%;
+    height: 100vw;
+    background-color: #fe5e00;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 20px 30px;
+    transform: translateX(0);
+  }
+  .burger-top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .burger-top > a {
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+  }
+  .burger-list {
+    font-family: "acumin-pro-condensed";
+    font-weight: 900;
+    font-size: 40px;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .burger-list > a {
+    color: white;
+  }
   footer {
     position: relative;
     margin-top: 120px;
@@ -165,6 +203,14 @@
     gap: 30px;
   }
 }
+@media screen and (min-width: 721px) and (max-width: 1020px) and (max-width: 1280px) {
+  header .nav-b {
+    width: 100%;
+  }
+  header .nav-b ul .list {
+    padding: 0 2vw;
+  }
+}
 @media screen and (min-width: 721px) and (max-width: 1020px) and (min-width: 721px) and (max-width: 1020px) {
   * {
     box-sizing: border-box;
@@ -214,6 +260,23 @@
     list-style-type: none;
     padding-left: 10px;
     color: white;
+  }
+  .burger {
+    transition: 0.5s;
+    transform: translateX(110%);
+  }
+  .burger.active {
+    width: 100%;
+    height: 100vw;
+    background-color: #fe5e00;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 20px 30px;
+    transform: translateX(0);
   }
   footer {
     position: relative;
@@ -351,6 +414,23 @@
     list-style-type: none;
     padding-left: 10px;
     color: white;
+  }
+  .burger {
+    transition: 0.5s;
+    transform: translateX(110%);
+  }
+  .burger.active {
+    width: 100%;
+    height: 100vw;
+    background-color: #fe5e00;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 20px 30px;
+    transform: translateX(0);
   }
   footer {
     position: relative;
@@ -636,7 +716,7 @@
     width: 150px;
     position: absolute;
     left: 50%;
-    top: 20%;
+    top: 50%;
     transform: translateX(-50%);
     z-index: 999;
   }
@@ -806,6 +886,44 @@
     font-size: 14px;
     color: white;
   }
+  .burger {
+    transition: 0.5s;
+    transform: translateX(110%);
+  }
+  .burger.active {
+    width: 100%;
+    height: 100vw;
+    background-color: #fe5e00;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 20px 30px;
+    transform: translateX(0);
+  }
+  .burger-top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .burger-top > a {
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+  }
+  .burger-list {
+    font-family: "acumin-pro-condensed";
+    font-weight: 900;
+    font-size: 40px;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .burger-list > a {
+    color: white;
+  }
   footer {
     position: relative;
     margin-top: 120px;
@@ -891,6 +1009,14 @@
     gap: 30px;
   }
 }
+@media screen and (max-width: 720px) and (max-width: 1280px) {
+  header .nav-b {
+    width: 100%;
+  }
+  header .nav-b ul .list {
+    padding: 0 2vw;
+  }
+}
 @media screen and (max-width: 720px) and (min-width: 721px) and (max-width: 1020px) {
   * {
     box-sizing: border-box;
@@ -940,6 +1066,23 @@
     list-style-type: none;
     padding-left: 10px;
     color: white;
+  }
+  .burger {
+    transition: 0.5s;
+    transform: translateX(110%);
+  }
+  .burger.active {
+    width: 100%;
+    height: 100vw;
+    background-color: #fe5e00;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 20px 30px;
+    transform: translateX(0);
   }
   footer {
     position: relative;
@@ -1077,6 +1220,23 @@
     list-style-type: none;
     padding-left: 10px;
     color: white;
+  }
+  .burger {
+    transition: 0.5s;
+    transform: translateX(110%);
+  }
+  .burger.active {
+    width: 100%;
+    height: 100vw;
+    background-color: #fe5e00;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 20px 30px;
+    transform: translateX(0);
   }
   footer {
     position: relative;
@@ -1363,7 +1523,7 @@
     width: 150px;
     position: absolute;
     left: 50%;
-    top: 20%;
+    top: 50%;
     transform: translateX(-50%);
     z-index: 999;
   }

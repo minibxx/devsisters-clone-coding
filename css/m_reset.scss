@@ -1,3 +1,16 @@
+@media (max-width:1280px) {
+  header {
+    .nav-b {
+      width: 100%;
+      ul {
+        .list {
+          padding:0 2vw;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 721px) and (max-width: 1020px) {
   @import "_mixin";
 
@@ -53,6 +66,24 @@
       }
     }
   }
+
+  .burger{
+    transition: .5s;
+    transform: translateX(110%);
+}
+.burger.active{
+    width: 100%;
+    height: 100vw;
+    background-color:#fe5e00;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 20px 30px;
+    transform: translateX(0);
+}
 
 
   footer {
@@ -240,6 +271,23 @@
       }
     }
   }
+  .burger{
+    transition: .5s;
+    transform: translateX(110%);
+}
+.burger.active{
+    width: 100%;
+    height: 100vw;
+    background-color:#fe5e00;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 20px 30px;
+    transform: translateX(0);
+}
 
 
   footer {

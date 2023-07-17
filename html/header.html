@@ -1,5 +1,5 @@
 
-<header>
+
     <nav class="nav-b">
         <a href="./devsisters.html">DEVSISTERS</a>
         <ul>
@@ -8,9 +8,31 @@
             <li class="list"><a href="./stories.html">STORIES</a></li>
             <li class="list"><a href="./investors.html">INVESTORS</a></li>
         </ul>
-        <a href="" class="burger-ic"><span class="material-symbols-outlined"> menu</span></a>
+        <a class="burger-ic"><span class="material-symbols-outlined"> menu</span></a>
     </nav>
-    <article>
-        
+    <article class="burger">
+        <div class="burger-top">
+            <a href="./devsisters.html">DEVSISTERS</a>
+            <a class="close">x</a>
+        </div>
+        <div class="burger-list">
+            <a href="./about.html">ABOUT</a>
+            <a href="./kingdom.html">GAMES</a>
+            <a href="./stories.html">STORIES</a>
+            <a href="./investors.html">INVESTORS</a>
+        </div>
     </article>
-</header>
+<script>
+    const elBurger = document.querySelector('.burger-ic');
+    const elBurgers = document.querySelector('.burger');
+    const elClose = document.querySelector('.close');
+    
+
+        elBurger.onclick = function(){
+            elBurgers.classList.add('active');
+        }
+
+        elClose.onclick = function(){
+            elBurgers.classList.remove('active');
+        }
+</script>

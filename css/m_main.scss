@@ -59,23 +59,23 @@
 
     .top {
         @include flex(space-between,center);
-        width: $wid*0.95;
+        width: $wid;
         margin: 0 auto 30px auto;
         >div {
             > p {
             @include flex(space-between,start){flex-direction: column};
-            @include font(600, 20px);
+            @include font(600, 27px);
             margin-top: 15px;
             width: 80%;
             word-break: keep-all;
             }
             > p:nth-of-type(2) {
               color: #fe5e00;
-              width: 70%;
+              width: 60%;
             }     
         }
         > img {
-          width: 60%;
+          width: 50%;
           animation: rhkdus 1s infinite alternate;
           transition: 0.5s;
           
@@ -88,60 +88,7 @@
       100% {transform: translateY(5%);}
     }
     
-    .a1-con {
-      @include flex(space-between,center){};
-      overflow: hidden;
-    
-      figure {
-        &:hover{
-          box-shadow: 0px 10px 10px #999999;
-          transform: translateY(-7%);
-          transition: 0.5s;
-        }
-        animation-name: ani-1;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        
-        /* @keyframes ani-1{
-            0%{transform: translateX(0%);} 
-            100%{transform: translateX(-100%) ;}  
-       }  */
-          
-      width: 355px; height: 420px;
-      border: 1px solid rgb(201, 201, 201);
-      border-radius: 20px;
-      margin: 30px;
-      > img{
-          width: 352px;
-          height: 200px;
-          object-fit: cover;
-          border-radius: 18px 18px 0 0 ;
-          overflow: hidden;
-      }
-      > figcaption{
-          height: 220px;
-          padding: 30px;
-          @include flex(space-between,start){flex-direction: column};
-          >p{
-            width: 300px;
-            @include font(600, 16px);
-            &:nth-of-type(2){
-              @include flex(flex-start,center){}
-              flex-wrap: wrap;
-              >a{
-                background-color: #ff8200;
-                color: white;
-                padding: 5px 10px;
-                border-radius: 25px;
-                font-size: 12px;
-                margin: 2px;
-              }
-            }
-          }  
-        }
-      }
-    }
+  
     .bt-black {
       width: $wid;
       margin: 20px auto;
@@ -463,60 +410,7 @@
     100% {transform: translateY(5%);}
   }
   
-  .a1-con {
-    @include flex(space-between,center){};
-    overflow: hidden;
-  
-    figure {
-      &:hover{
-        box-shadow: 0px 10px 10px #999999;
-        transform: translateY(-7%);
-        transition: 0.5s;
-      }
-      animation-name: ani-1;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      
-      /* @keyframes ani-1{
-          0%{transform: translateX(0%);} 
-          100%{transform: translateX(-100%) ;}  
-     }  */
-        
-    width: 355px; height: 420px;
-    border: 1px solid rgb(201, 201, 201);
-    border-radius: 20px;
-    margin: 30px;
-    > img{
-        width: 352px;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 18px 18px 0 0 ;
-        overflow: hidden;
-    }
-    > figcaption{
-        height: 220px;
-        padding: 30px;
-        @include flex(space-between,start){flex-direction: column};
-        >p{
-          width: 300px;
-          @include font(600, 16px);
-          &:nth-of-type(2){
-            @include flex(flex-start,center){}
-            flex-wrap: wrap;
-            >a{
-              background-color: #ff8200;
-              color: white;
-              padding: 5px 10px;
-              border-radius: 25px;
-              font-size: 12px;
-              margin: 2px;
-            }
-          }
-        }  
-      }
-    }
-  }
+ 
   .bt-black {
     width: $wid;
     margin: 20px auto;
