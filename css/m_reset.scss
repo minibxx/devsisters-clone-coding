@@ -18,54 +18,75 @@
 
   $wid : 100%;
 
-
   header {
+    display: none;
     position: fixed;
     left: 0;
     top: 0;
-    width: $wid;
+    width: 100%;
     z-index: 9999;
-    
+    height: 60px;
+
     .nav-b {
-      width: 90%;
-      margin: 0 auto;
-      @include flex(space-between, center) {}
-      padding: 12px 0;
-
-      >a {
-        @include font(600, 25px);
-        color: white;
-      }
-
-      >div {
-        color: white;
-        @include font(900, 1.5rem);
-      }
-
-      >ul {
-        @include flex(space-between, center) {}
-
-        padding: 0;
-
-        >li {
-          list-style-type: none;
-          padding:0 2vw;
-          color: white;
-
-          >a {
-            @include font(600, 14px);
+        width: $wid;
+        @include flex(space-between, flex-start) {}
+        margin: 0 auto;
+        padding: 12px 0;
+        z-index: 999;
+        position: relative;
+        >a {
+            @include font(600, 25px);
             color: white;
-          }
-
-          .burger-ic {
-            list-style-type: none;
-            padding-left: 10px;
-            color: white;
-          }
         }
-      }
+
+        >div {
+            color: white;
+            @include font(900, 1.5rem);
+        }
+
+        >ul {
+            @include flex(space-between, flex-start) {}
+
+            padding: 0;
+
+            .list {
+                list-style-type: none;
+                padding: 7px 40px 0 40px;
+                color: white;
+                
+                >a {
+                    @include font(600, 14px);
+                    color: white;
+                    text-align: center;
+                }
+            }
+            
+        }
     }
-  }
+}
+
+
+.list2{
+    @include flex(space-between, flex-start) {flex-direction: column}
+    
+    display: block;
+    >li{    
+        .list-2-yellow{
+            color: yellow;
+            align-items: center;
+            @include font(500, 13px);
+        }
+        >a {
+            @include font(400, 12px);
+            color: white;
+            padding-top: 10px;
+
+        }
+    }
+}
+header.active{
+    background-color: #fe5e00;
+}
 
   
 

@@ -46,6 +46,20 @@ figure {
   margin: 0;
 }
 
+.subm {
+  width: 100%;
+  height: 280px;
+  opacity: 90%;
+  background: #fe5e00;
+  position: fixed;
+  top: 0;
+  padding: 50px 0 50px 220px;
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+}
+
 header {
   position: fixed;
   left: 0;
@@ -58,9 +72,11 @@ header .nav-b {
   width: 1280px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin: 0 auto;
   padding: 12px 0;
+  z-index: 999;
+  position: relative;
 }
 header .nav-b > a {
   font-weight: 600;
@@ -75,18 +91,38 @@ header .nav-b > div {
 header .nav-b > ul {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 0;
 }
 header .nav-b > ul .list {
   list-style-type: none;
-  padding: 0 40px;
+  padding: 7px 40px 0 40px;
   color: white;
 }
 header .nav-b > ul .list > a {
   font-weight: 600;
   font-size: 14px;
   color: white;
+  text-align: center;
+}
+
+.list2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.list2 > li .list-2-yellow {
+  color: yellow;
+  align-items: center;
+  font-weight: 500;
+  font-size: 13px;
+}
+.list2 > li > a {
+  font-weight: 400;
+  font-size: 12px;
+  color: white;
+  padding-top: 10px;
 }
 
 header.active {
@@ -245,14 +281,17 @@ footer .ft-arrow::after {
     top: 0;
     width: 100%;
     z-index: 9999;
+    height: 60px;
   }
   header .nav-b {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 12px 0;
+    z-index: 999;
+    position: relative;
   }
   header .nav-b > a {
     font-weight: 600;
@@ -267,23 +306,41 @@ footer .ft-arrow::after {
   header .nav-b > ul {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 0;
   }
-  header .nav-b > ul > li {
+  header .nav-b > ul .list {
     list-style-type: none;
-    padding: 0 2vw;
+    padding: 7px 40px 0 40px;
     color: white;
   }
-  header .nav-b > ul > li > a {
+  header .nav-b > ul .list > a {
     font-weight: 600;
     font-size: 14px;
     color: white;
+    text-align: center;
   }
-  header .nav-b > ul > li .burger-ic {
-    list-style-type: none;
-    padding-left: 10px;
+  .list2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    display: block;
+  }
+  .list2 > li .list-2-yellow {
+    color: yellow;
+    align-items: center;
+    font-weight: 500;
+    font-size: 13px;
+  }
+  .list2 > li > a {
+    font-weight: 400;
+    font-size: 12px;
     color: white;
+    padding-top: 10px;
+  }
+  header.active {
+    background-color: #fe5e00;
   }
   footer {
     position: relative;
@@ -388,7 +445,7 @@ footer .ft-arrow::after {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 12px 0;
   }
   header .nav-b > a {
     font-weight: 600;
@@ -518,6 +575,10 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: "Pretendard", sans-serif;
+}
+
+body {
+  transition: 0.5s;
 }
 
 p {
@@ -754,7 +815,7 @@ body {
 .feat {
   width: 1280px;
   margin: 0 auto;
-  color: #fe5e00;
+  color: #fff;
 }
 .feat > video {
   border-radius: 10px;
@@ -900,6 +961,19 @@ body {
   figure {
     margin: 0;
   }
+  .subm {
+    width: 100%;
+    height: 280px;
+    opacity: 90%;
+    background: #fe5e00;
+    position: fixed;
+    top: 0;
+    padding: 50px 0 50px 220px;
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+  }
   header {
     position: fixed;
     left: 0;
@@ -912,9 +986,11 @@ body {
     width: 1280px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin: 0 auto;
     padding: 12px 0;
+    z-index: 999;
+    position: relative;
   }
   header .nav-b > a {
     font-weight: 600;
@@ -929,18 +1005,37 @@ body {
   header .nav-b > ul {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 0;
   }
   header .nav-b > ul .list {
     list-style-type: none;
-    padding: 0 40px;
+    padding: 7px 40px 0 40px;
     color: white;
   }
   header .nav-b > ul .list > a {
     font-weight: 600;
     font-size: 14px;
     color: white;
+    text-align: center;
+  }
+  .list2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .list2 > li .list-2-yellow {
+    color: yellow;
+    align-items: center;
+    font-weight: 500;
+    font-size: 13px;
+  }
+  .list2 > li > a {
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+    padding-top: 10px;
   }
   header.active {
     background-color: #fe5e00;
@@ -1089,14 +1184,17 @@ body {
     top: 0;
     width: 100%;
     z-index: 9999;
+    height: 60px;
   }
   header .nav-b {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 12px 0;
+    z-index: 999;
+    position: relative;
   }
   header .nav-b > a {
     font-weight: 600;
@@ -1111,23 +1209,41 @@ body {
   header .nav-b > ul {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 0;
   }
-  header .nav-b > ul > li {
+  header .nav-b > ul .list {
     list-style-type: none;
-    padding: 0 2vw;
+    padding: 7px 40px 0 40px;
     color: white;
   }
-  header .nav-b > ul > li > a {
+  header .nav-b > ul .list > a {
     font-weight: 600;
     font-size: 14px;
     color: white;
+    text-align: center;
   }
-  header .nav-b > ul > li .burger-ic {
-    list-style-type: none;
-    padding-left: 10px;
+  .list2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    display: block;
+  }
+  .list2 > li .list-2-yellow {
+    color: yellow;
+    align-items: center;
+    font-weight: 500;
+    font-size: 13px;
+  }
+  .list2 > li > a {
+    font-weight: 400;
+    font-size: 12px;
     color: white;
+    padding-top: 10px;
+  }
+  header.active {
+    background-color: #fe5e00;
   }
   footer {
     position: relative;
@@ -1232,7 +1348,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 12px 0;
   }
   header .nav-b > a {
     font-weight: 600;
@@ -1777,6 +1893,19 @@ body {
   figure {
     margin: 0;
   }
+  .subm {
+    width: 100%;
+    height: 280px;
+    opacity: 90%;
+    background: #fe5e00;
+    position: fixed;
+    top: 0;
+    padding: 50px 0 50px 220px;
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+  }
   header {
     position: fixed;
     left: 0;
@@ -1789,9 +1918,11 @@ body {
     width: 1280px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin: 0 auto;
     padding: 12px 0;
+    z-index: 999;
+    position: relative;
   }
   header .nav-b > a {
     font-weight: 600;
@@ -1806,18 +1937,37 @@ body {
   header .nav-b > ul {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 0;
   }
   header .nav-b > ul .list {
     list-style-type: none;
-    padding: 0 40px;
+    padding: 7px 40px 0 40px;
     color: white;
   }
   header .nav-b > ul .list > a {
     font-weight: 600;
     font-size: 14px;
     color: white;
+    text-align: center;
+  }
+  .list2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .list2 > li .list-2-yellow {
+    color: yellow;
+    align-items: center;
+    font-weight: 500;
+    font-size: 13px;
+  }
+  .list2 > li > a {
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+    padding-top: 10px;
   }
   header.active {
     background-color: #fe5e00;
@@ -1966,14 +2116,17 @@ body {
     top: 0;
     width: 100%;
     z-index: 9999;
+    height: 60px;
   }
   header .nav-b {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 12px 0;
+    z-index: 999;
+    position: relative;
   }
   header .nav-b > a {
     font-weight: 600;
@@ -1988,23 +2141,41 @@ body {
   header .nav-b > ul {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 0;
   }
-  header .nav-b > ul > li {
+  header .nav-b > ul .list {
     list-style-type: none;
-    padding: 0 2vw;
+    padding: 7px 40px 0 40px;
     color: white;
   }
-  header .nav-b > ul > li > a {
+  header .nav-b > ul .list > a {
     font-weight: 600;
     font-size: 14px;
     color: white;
+    text-align: center;
   }
-  header .nav-b > ul > li .burger-ic {
-    list-style-type: none;
-    padding-left: 10px;
+  .list2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    display: block;
+  }
+  .list2 > li .list-2-yellow {
+    color: yellow;
+    align-items: center;
+    font-weight: 500;
+    font-size: 13px;
+  }
+  .list2 > li > a {
+    font-weight: 400;
+    font-size: 12px;
     color: white;
+    padding-top: 10px;
+  }
+  header.active {
+    background-color: #fe5e00;
   }
   footer {
     position: relative;
@@ -2109,7 +2280,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 12px 0;
   }
   header .nav-b > a {
     font-weight: 600;

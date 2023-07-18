@@ -120,7 +120,7 @@
 
     <div class="font-title" data-aos="fade-up" data-aos-duration="1200">BRAVE JOURNEY</div>
     <div class="jour-row">
-        <img class="cookie-gif" src="../img/about/brave-cookie.gif" alt="">
+        <figure><img class="cookie-gif" src="../img/about/brave-cookie.gif" alt=""></figure> 
         <div>
             <div class="jour-col col1 col-margin">
                 <div class="j-year">2022</div>
@@ -172,18 +172,16 @@
 </body>
 </html>
 <script>
-    let pos = {y:0,y2:0,status:true};
+    let pos2 = {y:0,y2:0,status:true},tops = 0;
     const elGif = document.querySelector('.cookie-gif');
-    console.log(elGif);
-        
             window.addEventListener('scroll',function(){
-                console.log(console); 
-            pos.y = window.pageYOffset;
+                // console.log(console); 
+            pos2.y = window.pageYOffset;
 
-            pos.status = (pos.y > pos.y2) ? true : false;
-            pos.y2 = pos.y;
+            pos2.status = (pos2.y > pos2.y2) ? true : false;
+            pos2.y2 = pos.y;
         
-            if(pos.status){ 
+            if(pos2.status){ 
                 elGif.setAttribute('src',`../img/about/brave-cookie.gif`) 
             }
             else{ 

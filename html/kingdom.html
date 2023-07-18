@@ -83,7 +83,7 @@
             <a>VIEW TRAILER</a>
         </div>
     </article>
-    <article>
+    <article class="fea">
         <div class="font-title" data-aos="fade-up" data-aos-duration="1200">FEATURES</div>
         <div class="feat" data-aos="fade-up" data-aos-duration="1200">
             <div class="feat-title" class="features" data-aos="fade-up" data-aos-duration="1200">박진감 넘치는 쿠키들의 모험과 전투</div>
@@ -115,7 +115,7 @@
         <div class="title-num counter1 t-centers" data-aos="fade-up" data-aos-duration="1200"><code>51,000,000</code>+</div>
     </article>
 
-    <article class="features" data-aos="fade-up" data-aos-duration="1200">
+    <article class="features historys" data-aos="fade-up" data-aos-duration="1200">
         <div class="font-title">HISTORY</div>
         <div class="feat-text">쿠키런: 킹덤은 2021년 런칭하여 꾸준히 맛난 즐거움을 제공하고 있습니다.</div>
         
@@ -195,6 +195,39 @@
     </article>
     <script>
         AOS.init();
+
+        const trailer = document.querySelectorAll('.fea'),
+        historys = document.querySelectorAll('.historys'),
+        body = document.querySelector('body')
+
+        body.style="background:#fff"
+
+        let io = new IntersectionObserver(function(v){
+            v.forEach(function(d){
+                if(d.intersectionRatio > 0) {
+                    body.style="background:#000"
+                } else {
+                    body.style="background:#fff"
+                }
+            })
+        })
+
+
+        trailer.forEach(function(z){
+            io.observe(z);
+        })
+
+        let ios = new IntersectionObserver(function(v){
+            v.forEach(function(d){
+                if(d.intersectionRatio > 0) {
+                    body.style="background:#fff"
+                }
+            })
+        })
+        historys.forEach(function(z){
+            ios.observe(z);
+        })
+
     </script>
 </body>
 </html>

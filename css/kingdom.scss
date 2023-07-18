@@ -8,6 +8,8 @@ body, html{
     font-family : 'Pretendard',sans-serif;
 }
 
+body{transition: .5s;}
+
   
 p {white-space: pre-line;}
 a {text-decoration: none; color:#000;}
@@ -201,7 +203,7 @@ body {position: relative;}
 .feat{
   width: $wid;
   margin: 0 auto;
-  color: #fe5e00;
+  color: #fff;
   >video{border-radius: 10px;}
 }
 .feat-title{
