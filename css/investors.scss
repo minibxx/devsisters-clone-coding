@@ -124,7 +124,8 @@ $wid : 1280px;
         border: 1px solid rgb(197, 197, 197);
         border-width: 0 0 1px 0;
         padding: 20px 20px;
-        & :hover{color: #fe5e00;}
+        transition: 0.5s;
+        &:hover{color: #fe5e00; transition: 0.5s;}
         &.td-line{
             border: 3px solid rgb(88, 88, 88);
             border-width: 0 0 3px 0;

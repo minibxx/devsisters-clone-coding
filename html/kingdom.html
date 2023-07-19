@@ -11,6 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="../js/custom.js"></script>
     <script src="../js/counter.min.js"></script>
+    <script src="../js/about.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
@@ -36,10 +37,10 @@
                 <div>지금까지 본 적 없는 행복하고 달콤한 세계가 바로 여기에!<br>
                     사랑스러운 쿠키들과 함께 떠나는 꿈같은 이야기 속으로 초대합니다! </div>
                 <div class="store-ic">
-                    <a href><img src="../img/kingdom/app-store.svg" alt=""><span>App Store</span>
-                    <a href><img src="../img/kingdom/google-play.svg" alt=""><span>Google Play</span>
-                    <a href><img width="15" src="../img/kingdom/one-store.svg" alt=""><span>One Store</span></a>
-                    <a href><img width="15" src="../img/kingdom/galaxy-store.svg" alt=""><span>Galaxy Store</span></a>
+                    <a href="https://apps.apple.com/kr/app/%EC%BF%A0%ED%82%A4%EB%9F%B0-%ED%82%B9%EB%8D%A4/id1509450845"><img src="../img/kingdom/app-store.svg" alt=""><span>App Store</span>
+                    <a href="https://play.google.com/store/apps/details?id=com.devsisters.ck&hl=ko&gl=US&pli=1"><img src="../img/kingdom/google-play.svg" alt=""><span>Google Play</span>
+                    <a href="https://m.onestore.co.kr/mobilepoc/apps/appsDetail.omp?prodId=0000751155"><img width="15" src="../img/kingdom/one-store.svg" alt=""><span>One Store</span></a>
+                    <a href="https://galaxystore.samsung.com/detail/com.devsisters.ck?langCd=ko"><img width="15" src="../img/kingdom/galaxy-store.svg" alt=""><span>Galaxy Store</span></a>
                 </div>
             </div>
         </div>
@@ -205,7 +206,7 @@
         let io = new IntersectionObserver(function(v){
             v.forEach(function(d){
                 if(d.intersectionRatio > 0) {
-                    body.style="background:#000"
+                    body.style="background:#000; color:white"
                 } else {
                     body.style="background:#fff"
                 }

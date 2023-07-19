@@ -11,6 +11,8 @@
     <script src="../js/custom.js"></script>    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     <title>DEVSISTERS</title>
 </head>
 <body>
@@ -32,10 +34,10 @@
             <img data-aos="fade-up" data-aos-duration="1200" src="../img/main/과연.png" alt="">
         </div>    
     </article>
-    <article >
+    <article class="swiper mySwiper">
         <div class="font-title" data-aos="fade-up" data-aos-duration="1200">LATEST NEWS</div>
-        <div class="a1-con" data-aos="fade-up" data-aos-duration="1200">
-            <a href="https://www.devsisters.com/stories/news/CRK-RedDragon-update">
+        <div class="a1-con swiper-wrapper" data-aos="fade-up" data-aos-duration="1200">
+            <a class="swiper-slide" href="https://www.devsisters.com/stories/news/CRK-RedDragon-update">
                 <figure class="news">
                     <img class="news-img" src="../img/main/1. 쿠키런킹덤깨어나는.png" alt="">
                     <figcaption class="news-cap">
@@ -46,7 +48,7 @@
                     </figcaption>
                 </figure>
             </a>
-            <a href="https://www.devsisters.com/stories/news/CR_TCG_WCG_notice">
+            <a class="swiper-slide" href="https://www.devsisters.com/stories/news/CR_TCG_WCG_notice">
                 <figure class="news">
                     <img class="news-img" src="../img/main/2. 데브시스터즈,wcg2023.png" alt="">
                     <figcaption class="news-cap">
@@ -57,7 +59,7 @@
                     </figcaption>
                 </figure>
             </a>
-            <a href="https://www.devsisters.com/stories/news/CRK-DDP-spring-fest">
+            <a class="swiper-slide" href="https://www.devsisters.com/stories/news/CRK-DDP-spring-fest">
                 <figure class="news">
                     <img class="news-img" src="../img/main/4. 물망초다이노쿠키.jpg" alt="">
                     <figcaption class="news-cap">
@@ -68,7 +70,7 @@
                     </figcaption>
                 </figure>
             </a>
-            <a href="https://twitter.com/CRKingdomKR/status/1654304912530866178">
+            <a class="swiper-slide" href="https://twitter.com/CRKingdomKR/status/1654304912530866178">
                 <figure class="news">
                     <img class="news-img" src="../img/main/5. 신나고행복한어린이날.jpg" alt="">
                     <figcaption class="news-cap">
@@ -79,9 +81,42 @@
                     </figcaption>
                 </figure>
             </a>
-            <a href="">
+            <a class="swiper-slide" href="">
                 <figure class="news">
-                    <img class="news-img" src="../img/main/3. 카네이션선물을준비하고.jpg" alt="">
+                    <img class="news-img" src="../img/main/img_649e2c041d5f0.png" alt="">
+                    <figcaption class="news-cap">
+                        <p class="news-p">쿠키런: 킹덤, ‘깨어나는 붉은 용의 전설’ 업데이트 진행</p>
+                        <p class="news-p"><a class="news-bt" href="">#COOKIERUNKINGDOM</a>
+                            <a class="news-bt" href="">#NEWS</a>
+                            <a class="news-bt" href="">#UPDATE</a></p>
+                    </figcaption>
+                </figure>
+            </a>
+            <a class="swiper-slide" href="">
+                <figure class="news">
+                    <img class="news-img" src="../img/main/img_6452174198afb.png" alt="">
+                    <figcaption class="news-cap">
+                        <p class="news-p">쿠키런: 킹덤, ‘깨어나는 붉은 용의 전설’ 업데이트 진행</p>
+                        <p class="news-p"><a class="news-bt" href="">#COOKIERUNKINGDOM</a>
+                            <a class="news-bt" href="">#NEWS</a>
+                            <a class="news-bt" href="">#UPDATE</a></p>
+                    </figcaption>
+                </figure>
+            </a>
+            <a class="swiper-slide" href="">
+                <figure class="news">
+                    <img class="news-img" src="../img/main/img_64acebf315966.jpg" alt="">
+                    <figcaption class="news-cap">
+                        <p class="news-p">쿠키런: 킹덤, ‘깨어나는 붉은 용의 전설’ 업데이트 진행</p>
+                        <p class="news-p"><a class="news-bt" href="">#COOKIERUNKINGDOM</a>
+                            <a class="news-bt" href="">#NEWS</a>
+                            <a class="news-bt" href="">#UPDATE</a></p>
+                    </figcaption>
+                </figure>
+            </a>
+            <a class="swiper-slide" href="">
+                <figure class="news">
+                    <img class="news-img" src="../img/main/img_64b66e24e21fe.png" alt="">
                     <figcaption class="news-cap">
                         <p class="news-p">쿠키런: 킹덤, ‘깨어나는 붉은 용의 전설’ 업데이트 진행</p>
                         <p class="news-p"><a class="news-bt" href="">#COOKIERUNKINGDOM</a>
@@ -100,7 +135,8 @@
     <article class="games" >
         <div class="font-title" data-aos="fade-up" data-aos-duration="1200">OUR GAMES</div>
         <figure data-aos="fade-up" data-aos-duration="1200">
-            <video width="100%" height="560" autoplay muted poster="../img/main/a최고의.png"> 
+            <img class="games-th" src="../img/main/ourgames-ovenbreak-bg.webp" alt="">
+            <video width="100%" height="560" muted> 
                 <source src="../img/main/home-ourgames-ovenbreak.mp4" type="video/mp4">
             </video>
             <figcaption>
@@ -111,7 +147,8 @@
             </figcaption>
         </figure> 
         <figure data-aos="fade-up" data-aos-duration="1200">
-            <video width="100%" height="560" autoplay muted poster="../img/main/a최고의.png"> 
+            <img class="games-th" src="../img/main/ourgames-kingdom-bg.webp" alt="">
+            <video width="100%" height="560"  autobuffer="true" > 
                 <source src="../img/main/home-ourgames-kingdom.mp4" type="video/mp4"></video>
             <figcaption>
                 <img src="../img/main/10. 쿠키런킹덤.jpg" alt="">
@@ -121,7 +158,8 @@
             </figcaption>
         </figure>
         <figure data-aos="fade-up" data-aos-duration="1200">
-            <video width="100%" height="560" autoplay muted poster="../img/main/a최고의.png"> 
+            <img class="games-th" src="../img/main/ourgames-deadcideclub-bg.webp" alt="">
+            <video width="100%" height="560"  autobuffer="true"> 
                 <source src="../img/main/home-ourgames-deadcideclub.mp4" type="video/mp4"></video>
             <figcaption>
                 <img src="../img/main/11. 모르는 게임" alt="">
@@ -131,7 +169,8 @@
             </figcaption>
         </figure>
         <figure data-aos="fade-up" data-aos-duration="1200">
-            <video width="100%" height="560" autoplay muted poster="../img/main/a최고의.png"> 
+            <img class="games-th" src="../img/main/ourgames-brixity-bg.webp" alt="">
+            <video width="100%" height="560" autobuffer="true"> 
                 <source src="../img/main/home-ourgames-brixity.mp4" type="video/mp4"></video>
             <figcaption>
                 <img src="../img/main/12.브릭시티.jpg" alt="">
@@ -145,7 +184,7 @@
             </div>
         </figure>
         <div class="bt-black" data-aos="fade-up" data-aos-duration="1200">
-            <a href="">MEET ALL GAMES</a>
+            <a href="https://www.devsisters.com/games">MEET ALL GAMES</a>
         </div>
         </div>
     </article>
@@ -155,7 +194,7 @@
         <div class="studios">
             <a class="studios-a" href="https://www.devsisters.com/studios/ovengames" data-aos="fade-up" data-aos-duration="1200">
                 <figure class="studios-it">
-                    <img src="../img/main/oven games.svg" alt="">
+                    <img src="../img/main/oven games.svg" alt="https://www.devsisters.com/studios/ovengames">
                     <figcaption class="st-fc">
                         <div class="line-brown"></div>
                         <b>오븐게임즈</b>
@@ -165,7 +204,7 @@
             </a>
             <a class="studios-a" href="" data-aos="fade-up" data-aos-duration="1200">
                 <figure class="studios-it">
-                    <img src="../img/main/studio kingdom.svg" alt="">
+                    <img src="../img/main/studio kingdom.svg" alt="https://www.devsisters.com/studios/studio-kingdom">
                     <figcaption class="st-fc">
                         <div class="line-white"></div>
                         <b class="text-white">스튜디오 킹덤</b>
@@ -175,7 +214,7 @@
             </a>
             <a class="studios-a" href="" data-aos="fade-up" data-aos-duration="1200">
                 <figure class="studios-it">
-                    <img src="../img/main/press a.svg" alt="">
+                    <img src="../img/main/press a.svg" alt="https://www.devsisters.com/studios/press-a">
                     <figcaption class="st-fc">
                         <div class="line-white"></div>
                         <b class="text-white">프레스에이</b>
@@ -189,24 +228,35 @@
         <div class="font-title" data-aos="fade-up" data-aos-duration="1200">OUR STORIES</div>
         <div class="stories">
             <div data-aos="fade-up" data-aos-duration="1200">
-                <p>[쿠키런: 킹덤에서 일하면 어때요?] <br>#1. 기획/스토리 직군</p>
-                <a>#culture</a>
+                <a href="https://www.devsisters.com/stories/story/work-crk-1">
+                    <p class="stories-title">[쿠키런: 킹덤에서 일하면 어때요?] <br>#1. 기획/스토리 직군</p>
+                    <div class="stories-tag">#culture</div>
+                </a>
             </div>
             <div data-aos="fade-up" data-aos-duration="1200">
-                <p>[쿠키런: 킹덤에서 일하면 어때요?] <br>#1. 기획/스토리 직군</p>
-                <a>#culture</a>
+                <a href="https://www.devsisters.com/stories/story/culture-office_tour_1">
+                        <p class="stories-title">[쿠키런: 킹덤에서 일하면 어때요?] <br>#1. 기획/스토리 직군</p>
+                        <div class="stories-tag">#culture</div>
+                </a>
             </div>
             <div data-aos="fade-up" data-aos-duration="1200">
-                <p>[쿠키런: 킹덤에서 일하면 어때요?] <br>#1. 기획/스토리 직군</p>
-                <a>#culture</a>
+                <a href="https://www.devsisters.com/stories/story/work-crk-voice">
+                    <p class="stories-title">[쿠키런: 킹덤에서 일하면 어때요?] <br>#1. 기획/스토리 직군</p>
+                    <div class="stories-tag">#culture</div>
+                </a>
             </div>
             <div data-aos="fade-up" data-aos-duration="1200">
-                <p>[쿠키런: 킹덤에서 일하면 어때요?] <br>#1. 기획/스토리 직군</p>
-                <a>#culture</a>
+                <a href="https://www.devsisters.com/stories/story/highlights-behind-crk-1">
+                    <p class="stories-title">[쿠키런: 킹덤에서 일하면 어때요?] <br>#1. 기획/스토리 직군</p>
+                    <div class="stories-tag">#culture</div> 
+                </a>
             </div>
+            
+
+           
         </div>
         <div class="bt-black" data-aos="fade-up" data-aos-duration="1200">
-            <a href="">READ ALL</a>
+            <a href="https://www.devsisters.com/stories/story">READ ALL</a>
         </div>
     </article>
     
@@ -215,7 +265,7 @@
             <div class="font-title b-title" data-aos="fade-up" data-aos-duration="1200">JOIN OUR BRAVE<br>JOURNEY</div>
             <p data-aos="fade-up" data-aos-duration="1200">데브시스터즈의 용감한 여정에 합류할 여러분들을 기다립니다.</p>
             <div class="bt-black" data-aos="fade-up" data-aos-duration="1200">
-                <a href="">SEE CAREER</a>
+                <a href="https://careers.devsisters.com/?category=1">SEE CAREER</a>
             </div>
         </div>
         <img data-aos="fade-up" data-aos-duration="1200" src="../img/main/join-our.jpg" alt="">
@@ -223,6 +273,25 @@
     <script>
         AOS.init();
 
+        $(".games figure").on('mouseenter',function(){
+            $(this).find(".games-th").addClass("active");
+            console.log($(this).find("video").index())
+            $(this).find("video").get(0).play();
+        })
+        $(".games figure").on('mouseleave',function(){
+            $(this).find(".games-th").removeClass("active");
+            $(this).find("video").get(0).currentTime=0;
+        })
+        
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        });
     </script>
 </body>
 </html>

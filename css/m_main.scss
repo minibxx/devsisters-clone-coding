@@ -239,20 +239,21 @@
           &:nth-of-type(2){background-image: url(../img/main/17.\ 아워스토리즈2.jpg);  }
           &:nth-of-type(3){background-image: url(../img/main/18.\ 아워스토리즈3.jpg);  }
           &:nth-of-type(4){background-image: url(../img/main/19.\ 아워스토리즈4.jpg);  }
-          >p {
+          .stories-title {
             padding: 0 20px;
             color: white;
             line-height: 1.5;
             @include font(500,17px);
           }
-          >a{
-              background-color: #ff8200;
-              color: white;
-              padding: 5px 10px;
-              border-radius: 25px;
-              font-size: 12px;
-              margin: 20px;
-            }
+          .stories-tag{
+            width: 70px;
+            background-color: #ff8200;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 25px;
+            font-size: 12px;
+            margin: 20px;
+          }
         }
       }
     
@@ -561,20 +562,20 @@
         &:nth-of-type(2){background-image: url(../img/main/17.\ 아워스토리즈2.jpg);  }
         &:nth-of-type(3){background-image: url(../img/main/18.\ 아워스토리즈3.jpg);  }
         &:nth-of-type(4){background-image: url(../img/main/19.\ 아워스토리즈4.jpg);  }
-        >p {
+        .stories-title {
           padding: 0 20px;
           color: white;
           line-height: 1.5;
           @include font(500,17px);
         }
-        >a{
-            background-color: #ff8200;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 25px;
-            font-size: 12px;
-            margin: 20px;
-          }
+        .stories-tag{
+          background-color: #ff8200;
+          color: white;
+          padding: 5px 10px;
+          border-radius: 25px;
+          font-size: 12px;
+          margin: 20px;
+        }
       }
     }
   

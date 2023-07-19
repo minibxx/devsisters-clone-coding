@@ -273,14 +273,15 @@
   .stories > div:nth-of-type(4) {
     background-image: url(../img/main/19.\ 아워스토리즈4.jpg);
   }
-  .stories > div > p {
+  .stories > div .stories-title {
     padding: 0 20px;
     color: white;
     line-height: 1.5;
     font-weight: 500;
     font-size: 17px;
   }
-  .stories > div > a {
+  .stories > div .stories-tag {
+    width: 70px;
     background-color: #ff8200;
     color: white;
     padding: 5px 10px;
@@ -584,14 +585,14 @@
   .stories > div:nth-of-type(4) {
     background-image: url(../img/main/19.\ 아워스토리즈4.jpg);
   }
-  .stories > div > p {
+  .stories > div .stories-title {
     padding: 0 20px;
     color: white;
     line-height: 1.5;
     font-weight: 500;
     font-size: 17px;
   }
-  .stories > div > a {
+  .stories > div .stories-tag {
     background-color: #ff8200;
     color: white;
     padding: 5px 10px;

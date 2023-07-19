@@ -136,9 +136,11 @@
   border: 1px solid rgb(197, 197, 197);
   border-width: 0 0 1px 0;
   padding: 20px 20px;
+  transition: 0.5s;
 }
-.table-border td :hover {
+.table-border td:hover {
   color: #fe5e00;
+  transition: 0.5s;
 }
 .table-border td.td-line {
   border: 3px solid rgb(88, 88, 88);
@@ -170,7 +172,7 @@
 @media screen and (min-width: 721px) and (max-width: 1020px) {
   @import url("./reset.css");
   .hd-zone {
-    height: 80px;
+    height: 60px;
     background-color: #fe5e00;
   }
   .font-title {
@@ -328,7 +330,7 @@
 @media screen and (max-width: 720px) {
   @import url("./reset.css");
   .hd-zone {
-    height: 80px;
+    height: 60px;
     background-color: #fe5e00;
   }
   .font-title {

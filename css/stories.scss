@@ -39,21 +39,30 @@ body, html{
 
 .search-row{
     margin: 120px auto 0 auto;
-    @include font(600, 18px);
-    @include flex (space-between, center){};
-    background-color: #000000;
-    color: rgb(196, 196, 196);
-    padding: 16px 30px;
+    @include flex (space-between, flex-start){};
     border-radius: 50px;
+    background-color: #000000;
+    color: rgb(214, 214, 214);
+    padding: 12px 25px;
     .search {
-        width: 150px;
+      width: 160px;
+      @include font(800, 18px);
+      background-color: #000000;
+      outline: none;
+      border: 0;
     }
-    >div:nth-of-type(2)::after{
-        content: "search";
-        font-family: "Material Symbols Outlined";
-        vertical-align: middle;
-        font-size: 25px;
-        margin: 0 0 0 5px;
+    >div {
+      width: 20px; height: 20px;
+      &::after{
+        color: white;
+          content: "search";
+          width: 20px;
+          height: 20px;
+          font-family: "Material Symbols Outlined";
+          vertical-align: middle;
+          font-size: 25px;
+          margin:0;
+      }
     }
 }
     

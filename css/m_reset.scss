@@ -1,15 +1,15 @@
-@media (max-width:1280px) {
-  header {
-    .nav-b {
-      width: 100%;
-      ul {
-        .list {
-          padding:0 2vw;
-        }
-      }
-    }
-  }
-}
+// @media (max-width:1280px) {
+//   header {
+//     .nav-b {
+//       width: 100%;
+//       ul {
+//         .list {
+//           padding:0 2vw;
+//         }
+//       }
+//     }
+//   }
+// }
 
 @media screen and (min-width: 721px) and (max-width: 1020px) {
   @import "_mixin";
@@ -19,21 +19,23 @@
   $wid : 100%;
 
   header {
-    display: none;
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 5;
     height: 60px;
 
     .nav-b {
         width: $wid;
+
         @include flex(space-between, flex-start) {}
+
         margin: 0 auto;
         padding: 12px 0;
         z-index: 999;
         position: relative;
+
         >a {
             @include font(600, 25px);
             color: white;
@@ -50,40 +52,22 @@
             padding: 0;
 
             .list {
+                width: 120px;
                 list-style-type: none;
-                padding: 7px 40px 0 40px;
+                padding: 7px 0 0 0;
                 color: white;
-                
+
                 >a {
                     @include font(600, 14px);
                     color: white;
                     text-align: center;
                 }
             }
-            
-        }
-    }
-}
-
-
-.list2{
-    @include flex(space-between, flex-start) {flex-direction: column}
-    
-    display: block;
-    >li{    
-        .list-2-yellow{
-            color: yellow;
-            align-items: center;
-            @include font(500, 13px);
-        }
-        >a {
-            @include font(400, 12px);
-            color: white;
-            padding-top: 10px;
 
         }
     }
 }
+
 header.active{
     background-color: #fe5e00;
 }
@@ -276,6 +260,10 @@ header.active{
     }
   }
   
+
+.subm, .list3 {
+    display: none;
+}
 
 
   footer {
