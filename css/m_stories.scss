@@ -198,13 +198,13 @@
     width: $wid;
     margin: 30px auto 50px auto;
         .tag{
-            @include font(600, 20px);
+            @include font(600, 15px);
             flex-wrap: wrap;
             background-color: #ff8200;
             color: white;
-            padding: 16px 30px;
+            padding: 12px 15px;
             border-radius: 50px;
-            margin: 7px 2px;
+            margin: 5px 2px;
         }
     }  
 

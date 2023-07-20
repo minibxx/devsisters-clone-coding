@@ -224,28 +224,28 @@
             </a>
         </div>
     </article>
-    <article>
+    <article class="ff swiper">
         <div class="font-title" data-aos="fade-up" data-aos-duration="1200">OUR STORIES</div>
-        <div class="stories">
-            <div data-aos="fade-up" data-aos-duration="1200">
+        <div class="stories swiper-wrapper">
+            <div  class="swiper-slide" data-aos="fade-up" data-aos-duration="1200">
                 <a href="https://www.devsisters.com/stories/story/work-crk-1">
                     <p class="stories-title">[쿠키런: 킹덤에서 일하면 어때요?] <br>#1. 기획/스토리 직군</p>
                     <div class="stories-tag">#culture</div>
                 </a>
             </div>
-            <div data-aos="fade-up" data-aos-duration="1200">
+            <div  class="swiper-slide" data-aos="fade-up" data-aos-duration="1200">
                 <a href="https://www.devsisters.com/stories/story/culture-office_tour_1">
                         <p class="stories-title">[쿠키런: 킹덤에서 일하면 어때요?] <br>#1. 기획/스토리 직군</p>
                         <div class="stories-tag">#culture</div>
                 </a>
             </div>
-            <div data-aos="fade-up" data-aos-duration="1200">
+            <div  class="swiper-slide" data-aos="fade-up" data-aos-duration="1200">
                 <a href="https://www.devsisters.com/stories/story/work-crk-voice">
                     <p class="stories-title">[쿠키런: 킹덤에서 일하면 어때요?] <br>#1. 기획/스토리 직군</p>
                     <div class="stories-tag">#culture</div>
                 </a>
             </div>
-            <div data-aos="fade-up" data-aos-duration="1200">
+            <div  class="swiper-slide" data-aos="fade-up" data-aos-duration="1200">
                 <a href="https://www.devsisters.com/stories/story/highlights-behind-crk-1">
                     <p class="stories-title">[쿠키런: 킹덤에서 일하면 어때요?] <br>#1. 기획/스토리 직군</p>
                     <div class="stories-tag">#culture</div> 
@@ -292,6 +292,34 @@
             clickable: true,
         },
         });
+        
+        
+
+        $(window).resize(function() { 
+            if($(window).width() < 720) {
+                $(".ff").attr('class','ff swiper mySwiper2')
+
+                var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        keyboard: {
+            enabled: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+
+            } else{
+                $(".ff").attr('class','ff')
+                $(".stories > div").attr("class","")
+            }
+    })
     </script>
 </body>
 </html>
