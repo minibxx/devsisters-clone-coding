@@ -192,7 +192,7 @@ footer .ft-top {
   margin: 0px auto;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: baseline;
 }
 footer .ft-top > div:nth-of-type(1) {
   display: flex;
@@ -201,19 +201,58 @@ footer .ft-top > div:nth-of-type(1) {
   flex-direction: column;
   font-size: 15px;
 }
-footer .ft-top div:nth-of-type(2) {
+footer .ft-top .ft-toggle {
   width: 20%;
   display: flex;
-  justify-content: space-between;
-  align-items: start;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-footer .ft-top div:nth-of-type(2) > p:nth-of-type(2)::after {
+footer .ft-top .ft-toggle .material-symbols-outlined:after {
   content: "expand_more";
   font-family: "Material Symbols Outlined";
-  vertical-align: middle;
-  font-size: 25px;
-  margin: 0 0 0 5px;
+  font-size: 20px;
+}
+footer .ft-t-row {
+  width: 100%;
+  border-bottom: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+footer .ft-t-row > p {
+  font-weight: 600;
+  font-size: 20px;
+  align-items: center;
+  position: relative;
+  display: block;
+  padding: 10px 0;
+}
+footer .ft-t-row > p.active {
+  font-weight: 600;
+  font-size: 20px;
+  align-items: center;
+  position: relative;
+}
+footer .ft-t-column {
+  position: relative;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+footer .ft-t-column > div {
+  padding: 10px 0;
+  border-bottom: 2px solid white;
+  position: absolute;
+  top: 0;
+  display: none;
+  line-height: 1.5;
+}
+footer .ft-t-column > div > a {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
 }
 footer .ft-list {
   width: 100%;
@@ -334,7 +373,7 @@ footer .ft-arrow::after {
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: baseline;
   }
   footer .ft-top > div:nth-of-type(1) {
     display: flex;
@@ -343,22 +382,61 @@ footer .ft-arrow::after {
     flex-direction: column;
     font-size: 15px;
   }
-  footer .ft-top div:nth-of-type(2) {
-    width: 20%;
+  footer .ft-top .ft-toggle {
+    width: 60%;
     display: flex;
-    justify-content: space-between;
-    align-items: start;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
   }
-  footer .ft-top div:nth-of-type(2) > p:nth-of-type(2)::after {
+  footer .ft-top .ft-toggle .material-symbols-outlined:after {
     content: "expand_more";
     font-family: "Material Symbols Outlined";
-    vertical-align: middle;
-    font-size: 25px;
-    margin: 0 0 0 5px;
+    font-size: 20px;
+  }
+  footer .ft-t-row {
+    width: 100%;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  footer .ft-t-row > p {
+    font-weight: 600;
+    font-size: 20px;
+    align-items: center;
+    position: relative;
+    display: block;
+    padding: 10px 0;
+  }
+  footer .ft-t-row > p.active {
+    font-weight: 600;
+    font-size: 20px;
+    align-items: center;
+    position: relative;
+  }
+  footer .ft-t-column {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  footer .ft-t-column > div {
+    padding: 10px 0;
+    border-bottom: 2px solid white;
+    position: absolute;
+    top: 0;
+    display: none;
+    line-height: 1.5;
+  }
+  footer .ft-t-column > div > a {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
   }
   footer .ft-list {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 0;
@@ -367,7 +445,7 @@ footer .ft-arrow::after {
   footer .ft-list > li {
     padding-right: 10px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
     margin: 0;
   }
@@ -474,37 +552,80 @@ footer .ft-arrow::after {
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
-    align-items: start;
-    flex-direction: column-reverse;
+    align-items: baseline;
+    flex-direction: column;
   }
   footer .ft-top > div:nth-of-type(1) {
     display: flex;
     justify-content: space-between;
     align-items: start;
     flex-direction: column;
-    font-size: 10px;
+    order: 2;
+    font-size: 20px;
   }
-  footer .ft-top div:nth-of-type(2) {
+  footer .ft-top .ft-toggle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+  }
+  footer .ft-top .ft-toggle .material-symbols-outlined:after {
+    content: "expand_more";
+    font-family: "Material Symbols Outlined";
+    font-size: 20px;
+  }
+  footer .ft-t-row {
     width: 100%;
     border-bottom: 2px solid white;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-end;
+  }
+  footer .ft-t-row > p {
     font-weight: 600;
     font-size: 25px;
     align-items: center;
+    position: relative;
+    display: block;
+    padding: 10px 0;
   }
-  footer .ft-top div:nth-of-type(2) > p:nth-of-type(2)::after {
-    content: "expand_more";
-    font-family: "Material Symbols Outlined";
-    vertical-align: middle;
+  footer .ft-t-row > p.active {
+    font-weight: 600;
+    font-size: 25px;
+    align-items: center;
+    position: relative;
+  }
+  footer .ft-t-column {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  footer .ft-t-column > div {
+    padding: 10px 0;
+    border-bottom: 2px solid white;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    background-color: #fe5e00;
+    display: none;
+    line-height: 1.5;
+    width: 100%;
+  }
+  footer .ft-t-column > div > a {
+    color: white;
+    font-weight: 600;
     font-size: 20px;
-    margin: 0 0 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
   }
   footer .ft-list {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 0;
@@ -662,12 +783,11 @@ body {
 }
 
 .news {
-  width: 355px;
+  width: 100%;
   height: 420px;
   border: 1px solid rgb(201, 201, 201);
   border-radius: 20px;
   margin: 30px 0;
-  animation-name: ani-1;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -687,7 +807,7 @@ body {
   transition: 0.5s;
 }
 .news .news-img {
-  width: 353px;
+  width: 100%;
   height: 210px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1377,6 +1497,56 @@ body {
     100% {
       transform: translateY(5%);
     }
+  }
+  .news {
+    width: 100%;
+    height: 420px;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 20px;
+    margin: 30px auto;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translateY(0%);
+  }
+  @keyframes ani-1 {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .news:hover {
+    box-shadow: 0px 10px 10px #999999;
+    transform: translateY(-7%);
+    transition: 0.5s;
+  }
+  .news .news-img {
+    width: 100%;
+    height: 210px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 18px 18px 0 0;
+  }
+  .news .news-cap {
+    height: 220px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+  }
+  .news .news-cap .news-p {
+    width: 300px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .news .news-cap .news-p:nth-of-type(2) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
   }
   .bt-black {
     width: 500px;

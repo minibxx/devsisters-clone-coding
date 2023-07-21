@@ -97,16 +97,22 @@ body {position: relative;}
 }
 
 .img-move{
-    width: 100%;
-    animation-name: ani-1;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    
-    // @keyframes ani-1{
-    //     0%{transform: translateX(0%);} 
-    //     100%{transform: translateX(-100%) ;}
-    //  }
+    overflow-x: hidden;
+    >figure{
+         width: 100%;
+         display: flex;
+         >img{
+             animation-name: ani-1;
+             animation-duration: 30s;
+             animation-iteration-count: infinite;
+             animation-timing-function: linear;
+         }
+         
+         @keyframes ani-1{
+             0%{transform: translateX(0%);} 
+             100%{transform: translateX(-100%) ;}
+          }
+     }
 }
 
 .about-v {

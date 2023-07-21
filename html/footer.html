@@ -1,4 +1,4 @@
-<footer>
+
     <div class="ft">
         <div class="ft-top">
             <div>
@@ -16,9 +16,17 @@
                     <li class="ft-arrow">쿠키런 스토어</li>
                 </ul>
             </div>
-            <div>
-                <p>FAMILY SITES</p>
-                <p><span class="material-symbols-outlined"></span></p>
+            <div class="ft-toggle">
+                <div class="ft-t-row">
+                    <p>FAMILY SITES</p>
+                    <p><span class="material-symbols-outlined"></span></p>
+                </div>
+                <div class="ft-t-column">
+                    <div>
+                        <a>PRESS A</a>
+                        <a>DEVSISTERS VENTURES</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="ft-logo">
@@ -51,5 +59,16 @@
     </div>  
     <script>
         AOS.init();
+        const elS4 = document.querySelector('.ft-t-row');
+        
+        elS4.onclick = function(){
+            $(".ft-t-column div").slideDown()
+            $(".material-symbols-outlined").css("transform", "rotate(180deg)")
+        } 
+        
+        elS4.addEventListener('mouseleave',function(){
+            $(".ft-t-column div").slideUp()
+            $(".material-symbols-outlined").css("transform", "rotate(0deg)")
+        })
+			
     </script>      
-</footer>
